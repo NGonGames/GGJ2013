@@ -6,13 +6,13 @@ if (global.player_start_x != noone && global.player_start_y != noone) {
 }
 
 instance_create(x, y, Camera);  // create camera object to act as the viewport for the player
+heart = instance_create(0,0, HeartBeat);
 
     /** -- Any variable description preceded by @ is 
         modifiable for the purpose of changing game feel -- **/
 
 motion = instance_create(0, 0, ForceAggregator);
 vel = instance_create(0, 0, Force);
-heart = instance_create(0,0, HeartBeat);
 
 vel.xmax = 14;      // @maximum horizontal velocity
 vel.xcap = 14;      // maximum horizontal speed
@@ -72,8 +72,8 @@ slide = instance_create(0, 0, StateTemplate);       // Represents Sliding down a
 dash = instance_create(0, 0, StateTemplate);        // Represents dashing motion
   dash.main = Player_Dash;                          // link Player_Dash script as script to be called each frame
   dash.sprite = instance_create(0, 0, Animation);   // create animation object to represent dashing
-    dash.sprite.left = sprite_index;                // left facing dash sprite
-    dash.sprite.right = sprite_index;               // right facing dash sprite
+    dash.sprite.left = player_l_dash_sprite;        // left facing dash sprite
+    dash.sprite.right = player_r_dash_sprite;       // right facing dash sprite
   Animation_Refresh(dash.sprite);                   // set the rest of the dash animation variables automatically
   dash.taps = 0;                                    // keeps track of double tapping to activate state
   dash.delay  = 8;                                  // @grace period between taps
@@ -85,8 +85,6 @@ attack = instance_create(0, 0, StateTemplate);      // Represents attacking acti
 
 recoil = instance_create(0, 0, StateTemplate);      // Represents being hurt
 recoil.main = Player_Recoil;
-recoil.onExit = Player_Recoil_OnExit;
-recoil.onEnter = Player_Recoil_OnEnter;
 recoil.sprite = instance_create(0,0,Animation);
     recoil.sprite.left = player_l_recoil_sprite;
     recoil.sprite.right = player_r_recoil_sprite;
@@ -96,8 +94,8 @@ recoil.sprite = instance_create(0,0,Animation);
 rest = instance_create(0,0, StateTemplate);
 rest.main = Player_Rest;
 rest.sprite = instance_create(0,0,Animation);
-rest.sprite.left = 
-rest.sprite.right = 
+rest.sprite.left = player_l_rest_sprite;
+rest.sprite.right = player_r_rest_sprite;
 Animation_Refresh(rest.sprite);
   
 state = stand; state_last = stand; state_next = stand;  // state represents current state, state_last and state_next represent previous or next set state respectively

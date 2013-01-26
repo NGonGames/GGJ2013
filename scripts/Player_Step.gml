@@ -4,7 +4,7 @@ if(place_meeting(x + sign(vel.xmax), y, DamageHitbox) && state != recoil) {
     State_Change(recoil);
     var i = instance_place(x, y, DamageHitbox);
     if (i.force != -1) {
-        i.force.y = 6;
+        i.force.y = -20;
         if (i.x < x) {
             i.force.x = 20;
         } else {
@@ -13,7 +13,8 @@ if(place_meeting(x + sign(vel.xmax), y, DamageHitbox) && state != recoil) {
         Force_Attach(i.force, motion);
     }
 }
-if(place_meeting(x, y, DamageHitbox)) {
+
+if (place_meeting(x, y, DamageHitbox)) {
     vel.x = 0;
     vel.y = 0;
 }

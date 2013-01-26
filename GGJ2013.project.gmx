@@ -32,6 +32,8 @@
       <sprite>sprites\player_l_recoil_sprite</sprite>
       <sprite>sprites\player_l_rest_sprite</sprite>
       <sprite>sprites\player_r_rest_sprite</sprite>
+      <sprite>sprites\player_r_dash_sprite</sprite>
+      <sprite>sprites\player_l_dash_sprite</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="SmallGround">
@@ -78,8 +80,6 @@
         </scripts>
         <scripts name="Recoil">
           <script>scripts\Player_Recoil.gml</script>
-          <script>scripts\Player_Recoil_OnEnter.gml</script>
-          <script>scripts\Player_Recoil_OnExit.gml</script>
         </scripts>
         <scripts name="Rest">
           <script>scripts\Player_Rest.gml</script>
@@ -216,6 +216,7 @@
     </objects>
     <objects name="Enemies">
       <object>objects\SmallGround</object>
+      <object>objects\Enemy</object>
     </objects>
     <object>objects\HeartBeat</object>
   </objects>
