@@ -10,7 +10,7 @@ if (jump.control) {
     Player_X_Input();
     Player_X_Accelerate();
 } else if (place_meeting(x + vel.x, y, Solid)) {
-    repeat(abs(spd.x)) {
+    repeat(abs(vel.x)) {
         if (!place_meeting(x + sign(vel.x), y, Solid)) {
             x += sign(vel.x);
         }
