@@ -1,10 +1,10 @@
-if (Input_Pressed(Input.left)) {    // If you've pressed left once
+if (Input_Down(Input.left)) {    // If you've pressed left once
     if (dash.dir != Input.left) {   // and the previous direction tapped wasn't left
         dash.taps = 0;  // reset number of dash 'taps'
     }
     dash.dir = Input.left;  // set the dash direction to left
 }
-if (Input_Pressed(Input.right)) {   // If you've pressed right
+if (Input_Down(Input.right)) {   // If you've pressed right
     if (dash.dir != Input.right) {  // and it was left most recently
         dash.taps = 0;  // reset number of dash 'taps'
     }

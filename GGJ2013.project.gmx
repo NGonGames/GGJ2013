@@ -52,6 +52,13 @@
         <sprite>sprites\mground_r_attack_sprite</sprite>
         <sprite>sprites\mgroundmask_sprite</sprite>
       </sprites>
+      <sprites name="Air">
+        <sprite>sprites\air_l_patrol_sprite</sprite>
+        <sprite>sprites\air_r_patrol_sprite</sprite>
+        <sprite>sprites\air_l_attack_sprite</sprite>
+        <sprite>sprites\air_r_attack_sprite</sprite>
+        <sprite>sprites\airmask_sprite</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -164,7 +171,7 @@
         <script>scripts\SmallGround_Step.gml</script>
         <script>scripts\SmallGround_Draw.gml</script>
         <scripts name="Patrol">
-          <script>scripts\SmallGround_Partrol.gml</script>
+          <script>scripts\SmallGround_Patrol.gml</script>
           <script>scripts\SmallGround_Patrol_OnEnter.gml</script>
         </scripts>
         <scripts name="Attack">
@@ -176,6 +183,30 @@
         <script>scripts\MediumGround_Create.gml</script>
         <script>scripts\MediumGround_Step.gml</script>
         <script>scripts\MediumGround_Draw.gml</script>
+        <scripts name="Patrol">
+          <script>scripts\MediumGround_Patrol.gml</script>
+          <script>scripts\MediumGround_Patrol_OnEnter.gml</script>
+        </scripts>
+        <scripts name="Attack">
+          <script>scripts\MediumGround_Attack.gml</script>
+          <script>scripts\MediumGround_Attack_OnEnter.gml</script>
+        </scripts>
+      </scripts>
+      <scripts name="Air">
+        <script>scripts\AirSpike_Create.gml</script>
+        <script>scripts\AirSpike_Step.gml</script>
+        <script>scripts\AirSpike_Draw.gml</script>
+        <scripts name="Patrol">
+          <script>scripts\AirSpike_Patrol.gml</script>
+          <script>scripts\AirSpike_Patrol_OnEnter.gml</script>
+        </scripts>
+        <scripts name="Dive">
+          <script>scripts\AirSpike_Dive.gml</script>
+        </scripts>
+        <scripts name="Attack">
+          <script>scripts\AirSpike_Attack.gml</script>
+          <script>scripts\AirSpike_Attack_OnEnter.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <scripts name="DamageHitbox">
@@ -230,9 +261,10 @@
       <object>objects\CreditsObject</object>
     </objects>
     <objects name="Enemies">
-      <object>objects\SmallGround</object>
       <object>objects\Enemy</object>
+      <object>objects\SmallGround</object>
       <object>objects\MediumGround</object>
+      <object>objects\AirSpike</object>
     </objects>
   </objects>
   <rooms name="rooms">

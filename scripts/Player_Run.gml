@@ -25,3 +25,5 @@ if (Input_Pressed(Input.attack)) {
 };
 
 Player_Detect_Dash();
+
+jump.number = 0;

@@ -76,7 +76,7 @@ dash = instance_create(0, 0, StateTemplate);        // Represents dashing motion
     dash.sprite.right = player_r_dash_sprite;       // right facing dash sprite
   Animation_Refresh(dash.sprite);                   // set the rest of the dash animation variables automatically
   dash.taps = 0;                                    // keeps track of double tapping to activate state
-  dash.delay  = 8;                                  // @grace period between taps
+  dash.delay  = 15;                                  // @grace period between taps
   dash.length = 240;                                // @length of dash in px
   dash.dir = 0;                                     // direction of dash
   dash.xbegin = 0;                                  // starting x position of a dash, to measure against the 'length' property

@@ -7,15 +7,15 @@ motion.decay = 0.5;
 damageHitbox = -1;
 Force_Attach(vel, motion);
 
-walk_distance = 200;
-startX = x;
 patrol = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting
-  patrol.main = SmallGround_Partrol;
+  patrol.main = SmallGround_Patrol;
   patrol.onEnter = SmallGround_Patrol_OnEnter;                        // link Player_Stand as script for step event
   patrol.sprite = instance_create(0, 0, Animation);  // create animation object to represent idling
     patrol.sprite.left = smallground_l_patrol_sprite;               // left facing idle sprite ID
     patrol.sprite.right = smallground_r_patrol_sprite;              // right facing idle sprite ID
   Animation_Refresh(patrol.sprite);                  // set the rest of the idle animation vairables automatically
+  patrol.startx = x;
+  patrol.distance = 200;
 
   
 attack = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting
