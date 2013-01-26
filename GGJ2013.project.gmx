@@ -40,6 +40,7 @@
         <sprite>sprites\smallground_l_attack_sprite</sprite>
         <sprite>sprites\smallground_r_attack_sprite</sprite>
       </sprites>
+      <sprite>sprites\smallgroundmask_sprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -47,6 +48,7 @@
   <scripts name="scripts">
     <scripts name="Player">
       <script>scripts\Player_Create.gml</script>
+      <script>scripts\Player_Step.gml</script>
       <script>scripts\Player_Draw.gml</script>
       <scripts name="States">
         <scripts name="Stand">
@@ -86,7 +88,6 @@
       <script>scripts\Player_X_Input.gml</script>
       <script>scripts\Player_X_Accelerate.gml</script>
       <script>scripts\Player_Detect_Dash.gml</script>
-      <script>scripts\Player_Step.gml</script>
     </scripts>
     <scripts name="StateTemplate">
       <script>scripts\State_Create.gml</script>
@@ -164,8 +165,8 @@
       </scripts>
     </scripts>
     <scripts name="DamageHitbox">
-      <script>scripts\DamageHitbox_Step.gml</script>
       <script>scripts\DamageHitbox_Create.gml</script>
+      <script>scripts\DamageHitbox_Step.gml</script>
     </scripts>
     <scripts name="Gate">
       <script>scripts\Gate_Create.gml</script>
