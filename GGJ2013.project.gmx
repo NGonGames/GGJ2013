@@ -17,6 +17,18 @@
       </sprites>
       <sprite>sprites\credits_sprite</sprite>
     </sprites>
+    <sprites name="Player">
+      <sprite>sprites\player_l_fall_sprite</sprite>
+      <sprite>sprites\player_l_jump_sprite</sprite>
+      <sprite>sprites\player_l_run_sprite</sprite>
+      <sprite>sprites\player_l_slide_sprite</sprite>
+      <sprite>sprites\player_l_stand_sprite</sprite>
+      <sprite>sprites\player_r_fall_sprite</sprite>
+      <sprite>sprites\player_r_jump_sprite</sprite>
+      <sprite>sprites\player_r_run_sprite</sprite>
+      <sprite>sprites\player_r_slide_sprite</sprite>
+      <sprite>sprites\player_r_stand_sprite</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -45,6 +57,9 @@
         </scripts>
         <scripts name="Fall">
           <script>scripts\Player_Fall.gml</script>
+        </scripts>
+        <scripts name="Slide">
+          <script>scripts\Player_Slide.gml</script>
         </scripts>
       </scripts>
       <script>scripts\Player_X_Input.gml</script>

@@ -22,28 +22,27 @@ vel.fric = 1.1;     // @horizontal friction
 vel.ymax = 15;      // @maximum falling speed
 vel.yacl = 2.1;     // @gravity
 
-motion.decay = 0.99;
 Force_Attach(vel, motion);
 
 stand = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting
   stand.main = Player_Stand;                        // link Player_Stand as script for step event
   stand.sprite = instance_create(0, 0, Animation);  // create animation object to represent idling
-    stand.sprite.left = sprite_index;               // left facing idle sprite ID
-    stand.sprite.right = sprite_index;              // right facing idle sprite ID
+    stand.sprite.left = player_l_stand_sprite;      // left facing idle sprite ID
+    stand.sprite.right = player_r_stand_sprite;     // right facing idle sprite ID
   Animation_Refresh(stand.sprite);                  // set the rest of the idle animation vairables automatically
   
 run = instance_create(0, 0, StateTemplate);         // represents horizontal motion along ground/hill surfaces
   run.main = Player_Run;                            // link Player_Run as script for step event
   run.sprite = instance_create(0, 0, Animation);    // create animation object to represent running
-    run.sprite.left = sprite_index;                 // left facing running sprite ID
-    run.sprite.right = sprite_index;                // right facing running sprite ID
+    run.sprite.left = player_l_run_sprite;          // left facing running sprite ID
+    run.sprite.right = player_r_run_sprite;         // right facing running sprite ID
   Animation_Refresh(run.sprite);                    // automatically set the rest of the running animation variables
   
 jump = instance_create(0, 0, StateTemplate);        // Represents upwards vertical motion **ONLY**
   jump.main = Player_Jump;                          // link Player_jump as script to be called each frame
   jump.sprite = instance_create(0, 0, Animation);   // create an animation object to represent rising portion of jump
-    jump.sprite.left = sprite_index;                // left facing jump sprite
-    jump.sprite.right = sprite_index;               // right facing jump sprite
+    jump.sprite.left = player_l_jump_sprite;        // left facing jump sprite
+    jump.sprite.right = player_r_jump_sprite;       // right facing jump sprite
   Animation_Refresh(jump.sprite);                   // set the rest of the jump animation variables automatically
   jump.control = true;                              // flag for indicating control of jump after walljumping
   jump.wallgrab = false;                            // flag for indicating auto-walljump behavior
@@ -54,9 +53,16 @@ jump = instance_create(0, 0, StateTemplate);        // Represents upwards vertic
 fall = instance_create(0, 0, StateTemplate);        // Represents downwards vertical motion **ONLY**
   fall.main = Player_Fall;                          // link Player_Fall as script to be called each frame
   fall.sprite = instance_create(0, 0, Animation);   // create an animation object to be called each frame
-    fall.sprite.left = sprite_index;                // left facing fall sprite
-    fall.sprite.right = sprite_index;               // right facing fall sprite
+    fall.sprite.left = player_l_fall_sprite;        // left facing fall sprite
+    fall.sprite.right = player_r_fall_sprite;       // right facing fall sprite
   Animation_Refresh(fall.sprite);                   // set the rest of the fall animation variables automatically
+  
+slide = instance_create(0, 0, StateTemplate);       // Represents Sliding down a wall
+  slide.main = Player_Slide;                        // link Player_Slide as script to be called each frame
+  slide.sprite = instance_create(0, 0, Animation);  // create an animation object to represent sliding down a wall waiting to jump
+    slide.sprite.left = player_l_slide_sprite;      //
+    slide.sprite.right = player_r_slide_sprite;     //
+  Animation_Refresh(slide.sprite);
 
 dash = instance_create(0, 0, StateTemplate);        // Represents dashing motion
   dash.main = Player_Dash;                          // link Player_Dash script as script to be called each frame
