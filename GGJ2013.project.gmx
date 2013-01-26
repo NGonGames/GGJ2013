@@ -208,6 +208,7 @@
           <script>scripts\AirSpike_Attack_OnEnter.gml</script>
         </scripts>
       </scripts>
+      <script>scripts\Enemy_Draw.gml</script>
     </scripts>
     <scripts name="DamageHitbox">
       <script>scripts\DamageHitbox_Create.gml</script>
