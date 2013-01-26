@@ -59,7 +59,15 @@
         <sprite>sprites\air_r_attack_sprite</sprite>
         <sprite>sprites\airmask_sprite</sprite>
       </sprites>
+      <sprites name="LargeGround">
+        <sprite>sprites\lground_l_attack_sprite</sprite>
+        <sprite>sprites\lground_l_patrol_sprite</sprite>
+        <sprite>sprites\lground_r_attack_sprite</sprite>
+        <sprite>sprites\lground_r_patrol_sprite</sprite>
+        <sprite>sprites\lgroundmask_sprite</sprite>
+      </sprites>
     </sprites>
+    <sprite>sprites\hb1_sprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -169,7 +177,6 @@
       <scripts name="SmallGround">
         <script>scripts\SmallGround_Create.gml</script>
         <script>scripts\SmallGround_Step.gml</script>
-        <script>scripts\SmallGround_Draw.gml</script>
         <scripts name="Patrol">
           <script>scripts\SmallGround_Patrol.gml</script>
           <script>scripts\SmallGround_Patrol_OnEnter.gml</script>
@@ -182,7 +189,6 @@
       <scripts name="MediumGround">
         <script>scripts\MediumGround_Create.gml</script>
         <script>scripts\MediumGround_Step.gml</script>
-        <script>scripts\MediumGround_Draw.gml</script>
         <scripts name="Patrol">
           <script>scripts\MediumGround_Patrol.gml</script>
           <script>scripts\MediumGround_Patrol_OnEnter.gml</script>
@@ -195,7 +201,6 @@
       <scripts name="Air">
         <script>scripts\AirSpike_Create.gml</script>
         <script>scripts\AirSpike_Step.gml</script>
-        <script>scripts\AirSpike_Draw.gml</script>
         <scripts name="Patrol">
           <script>scripts\AirSpike_Patrol.gml</script>
           <script>scripts\AirSpike_Patrol_OnEnter.gml</script>
@@ -206,6 +211,18 @@
         <scripts name="Attack">
           <script>scripts\AirSpike_Attack.gml</script>
           <script>scripts\AirSpike_Attack_OnEnter.gml</script>
+        </scripts>
+      </scripts>
+      <scripts name="LargeGround">
+        <script>scripts\LargeGround_Create.gml</script>
+        <script>scripts\LargeGround_Step.gml</script>
+        <scripts name="Patrol">
+          <script>scripts\LargeGround_Patrol.gml</script>
+          <script>scripts\LargeGround_Patrol_OnEnter.gml</script>
+        </scripts>
+        <scripts name="Attack">
+          <script>scripts\LargeGround_Attack.gml</script>
+          <script>scripts\LargeGround_Attack_OnEnter.gml</script>
         </scripts>
       </scripts>
       <script>scripts\Enemy_Draw.gml</script>
@@ -266,6 +283,7 @@
       <object>objects\SmallGround</object>
       <object>objects\MediumGround</object>
       <object>objects\AirSpike</object>
+      <object>objects\LargeGround</object>
     </objects>
   </objects>
   <rooms name="rooms">

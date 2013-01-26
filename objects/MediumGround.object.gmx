@@ -74,7 +74,7 @@ MediumGround_Step();
           <argument>
             <kind>1</kind>
             <string>/// MediumGround_Draw();
-MediumGround_Draw();
+Enemy_Draw();
 </string>
           </argument>
         </arguments>

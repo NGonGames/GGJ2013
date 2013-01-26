@@ -71,7 +71,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>SmallGround_Draw();
+            <string>Enemy_Draw();
 </string>
           </argument>
         </arguments>

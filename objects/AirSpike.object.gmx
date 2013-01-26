@@ -73,8 +73,7 @@ AirSpike_Step();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// AirSpike_Draw();
-AirSpike_Draw();
+            <string>Enemy_Draw();
 </string>
           </argument>
         </arguments>

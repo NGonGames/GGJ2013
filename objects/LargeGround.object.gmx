@@ -73,8 +73,7 @@ LargeGround_Step();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// LargeGround_Draw();
-LargeGround_Draw();
+            <string>Enemy_Draw();
 </string>
           </argument>
         </arguments>
