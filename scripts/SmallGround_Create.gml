@@ -4,6 +4,7 @@ vel = instance_create(0, 0, Force);
 vel.x = 5;
 vel.yacl = 2.1;
 motion.decay = 0.5;
+damageHitbox = -1;
 Force_Attach(vel, motion);
 
 walk_distance = 200;
@@ -18,7 +19,8 @@ patrol = instance_create(0, 0, StateTemplate);       // represents normal, stati
 
   
 attack = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting
-  attack.main = SmallGround_Attack;                     // link Player_Stand as script for step event
+  attack.main = SmallGround_Attack;   
+  attack.onEnter = SmallGround_Attack_OnEnter;                   // link Player_Stand as script for step event
   attack.sprite = instance_create(0, 0, Animation);  // create animation object to represent idling
     attack.sprite.left = sprite_index;               // left facing idle sprite ID
     attack.sprite.right = sprite_index;              // right facing idle sprite ID

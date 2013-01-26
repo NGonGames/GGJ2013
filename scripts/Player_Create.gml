@@ -22,6 +22,8 @@ vel.fric = 1.1;     // @horizontal friction
 vel.ymax = 15;      // @maximum falling speed
 vel.yacl = 2.1;     // @gravity
 
+motion.decay = 0.8;
+
 Force_Attach(vel, motion);
 
 stand = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting
@@ -78,5 +80,10 @@ dash = instance_create(0, 0, StateTemplate);        // Represents dashing motion
 
 attack = instance_create(0, 0, StateTemplate);      // Represents attacking action
 recoil = instance_create(0, 0, StateTemplate);      // Represents being hurt
+recoil.main = Player_Recoil;
+recoil.sprite = instance_create(0,0,Animation);
+    recoil.sprite.left = sprite_index;
+    recoil.sprite.right = sprite_index;
+  Animation_Refresh(recoil.sprite);
 
 state = stand; state_last = stand; state_next = stand;  // state represents current state, state_last and state_next represent previous or next set state respectively

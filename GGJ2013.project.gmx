@@ -61,6 +61,9 @@
         <scripts name="Slide">
           <script>scripts\Player_Slide.gml</script>
         </scripts>
+        <scripts name="Recoil">
+          <script>scripts\Player_Recoil.gml</script>
+        </scripts>
       </scripts>
       <script>scripts\Player_X_Input.gml</script>
       <script>scripts\Player_X_Accelerate.gml</script>
@@ -132,12 +135,13 @@
         <script>scripts\SmallGround_Create.gml</script>
         <script>scripts\SmallGround_Step.gml</script>
         <script>scripts\SmallGround_Draw.gml</script>
-        <scripts name="Patrolling">
+        <scripts name="Patrol">
           <script>scripts\SmallGround_Partrol.gml</script>
           <script>scripts\SmallGround_Patrol_OnEnter.gml</script>
         </scripts>
-        <scripts name="Attacking">
+        <scripts name="Attack">
           <script>scripts\SmallGround_Attack.gml</script>
+          <script>scripts\SmallGround_Attack_OnEnter.gml</script>
         </scripts>
       </scripts>
     </scripts>
