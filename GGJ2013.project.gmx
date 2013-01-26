@@ -34,6 +34,8 @@
       <sprite>sprites\player_r_rest_sprite</sprite>
       <sprite>sprites\player_r_dash_sprite</sprite>
       <sprite>sprites\player_l_dash_sprite</sprite>
+      <sprite>sprites\player_r_attack_sprite</sprite>
+      <sprite>sprites\player_l_attack_sprite</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="SmallGround">
@@ -41,8 +43,15 @@
         <sprite>sprites\smallground_r_patrol_sprite</sprite>
         <sprite>sprites\smallground_l_attack_sprite</sprite>
         <sprite>sprites\smallground_r_attack_sprite</sprite>
+        <sprite>sprites\smallgroundmask_sprite</sprite>
       </sprites>
-      <sprite>sprites\smallgroundmask_sprite</sprite>
+      <sprites name="Medium">
+        <sprite>sprites\mground_l_patrol_sprite</sprite>
+        <sprite>sprites\mground_r_patrol_sprite</sprite>
+        <sprite>sprites\mground_l_attack_sprite</sprite>
+        <sprite>sprites\mground_r_attack_sprite</sprite>
+        <sprite>sprites\mgroundmask_sprite</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -163,6 +172,11 @@
           <script>scripts\SmallGround_Attack_OnEnter.gml</script>
         </scripts>
       </scripts>
+      <scripts name="MediumGround">
+        <script>scripts\MediumGround_Create.gml</script>
+        <script>scripts\MediumGround_Step.gml</script>
+        <script>scripts\MediumGround_Draw.gml</script>
+      </scripts>
     </scripts>
     <scripts name="DamageHitbox">
       <script>scripts\DamageHitbox_Create.gml</script>
@@ -188,6 +202,7 @@
     </scripts>
   </scripts>
   <objects name="objects">
+    <object>objects\HeartBeat</object>
     <object>objects\Player</object>
     <object>objects\Solid</object>
     <object>objects\SemiSolid</object>
@@ -217,8 +232,8 @@
     <objects name="Enemies">
       <object>objects\SmallGround</object>
       <object>objects\Enemy</object>
+      <object>objects\MediumGround</object>
     </objects>
-    <object>objects\HeartBeat</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\setup</room>

@@ -15,6 +15,6 @@
   <TextureGroup>0</TextureGroup>
   <For3D>0</For3D>
   <frames>
-    <frame index="0">images\sprite30_0.png</frame>
+    <frame index="0">images\mgroundmask_sprite_0.png</frame>
   </frames>
 </sprite>

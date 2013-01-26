@@ -82,6 +82,11 @@ dash = instance_create(0, 0, StateTemplate);        // Represents dashing motion
   dash.xbegin = 0;                                  // starting x position of a dash, to measure against the 'length' property
 
 attack = instance_create(0, 0, StateTemplate);      // Represents attacking action
+  attack.main = Player_Attack;
+  attack.sprite = instance_create(0, 0, Animation);
+    attack.sprite.left = player_l_attack_sprite;
+    attack.sprite.right = player_r_attack_sprite;
+  Animation_Refresh(attack.sprite);
 
 recoil = instance_create(0, 0, StateTemplate);      // Represents being hurt
 recoil.main = Player_Recoil;

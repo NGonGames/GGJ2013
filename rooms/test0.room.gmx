@@ -58,6 +58,7 @@
     <instance objName="Player" x="128" y="416" name="inst_E51A3588" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Door" x="1472" y="928" name="inst_7B441333" locked="0" code="rm = test1;&#xA;rx = 1400;&#xA;ry = 420;&#xA;auto = false;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SmallGround" x="800" y="416" name="inst_D63B419B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="MediumGround" x="1263" y="423" name="inst_A1099D9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
