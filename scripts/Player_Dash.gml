@@ -25,6 +25,6 @@ if (vel.x) {
 
 Move_X(motion);
 
-if (abs(vel.x) != vel.xcap) {
+if (abs(vel.x) != vel.xcap || x == xprevious) {
     State_Change(run);
 }
