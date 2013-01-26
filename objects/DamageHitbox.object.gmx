@@ -2,7 +2,7 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>DamageHitbox_Create()
+            <string>/// DamageHitbox_Create();
+DamageHitbox_Create();
 </string>
           </argument>
         </arguments>
@@ -48,7 +49,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>DamageHitbox_Step();
+            <string>/// DamageHitbox_Step();
+DamageHitbox_Step();
 </string>
           </argument>
         </arguments>

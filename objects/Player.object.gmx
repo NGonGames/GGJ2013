@@ -49,7 +49,8 @@ Player_Create();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Player_Step();
+            <string>/// Player_Step();
+Player_Step();
 </string>
           </argument>
         </arguments>

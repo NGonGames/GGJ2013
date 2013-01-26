@@ -1,16 +1,21 @@
 if (state.age == 0) {
     jump.wallgrab = false;
-    jump.control = true;    // return horitontal control in the event of coming from a walljump
+    //jump.control = true;    // return horitontal control in the event of coming from a walljump
 }
 
-if (Input_Pressed(Input.jump) && (place_meeting(x + 1, y, Solid) || place_meeting(x - 1, y, Solid))) {  // trying to walljump?
+if (vel.xprs && place_meeting(x + sign(vel.xmax), y, Solid)) {
+    State_Change(slide);
+    exit;
+}
+
+/*if (Input_Pressed(Input.jump) && (place_meeting(x + 1, y, Solid) || place_meeting(x - 1, y, Solid))) {  // trying to walljump?
     jump.number -= 1;   // negate jump counter incrementing so you're not penalized for walljumping
     vel.x = vel.xcap * iff(place_meeting(x + 1, y, Solid), -1, 1);   // start moving away from the wall
     vel.xmax = vel.xcap * sign(vel.x);   // set direction variable in most paranoid way possible
     State_Change(jump); // start jumping!
     jump.control = false;   // you've wall jumped, no soup for you. (momentary grace peroid for switching directionality of input)
     exit;
-}
+}*/
 
 Player_X_Input();   // detect and handle player input
 Player_X_Accelerate();  // handle motion based on current input status

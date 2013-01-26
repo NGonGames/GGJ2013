@@ -26,6 +26,7 @@ if (abs(y - goal_y) > (height * .3)) {
 }
 
 y -= (y - dy) / (yfac);
+y = Player.y;
 x -= (x - dx) / (xfac / 2);
 
 background_x[0] = view_xview[0] * .9;

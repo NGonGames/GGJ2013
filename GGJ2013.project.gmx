@@ -17,7 +17,56 @@
       </sprites>
       <sprite>sprites\credits_sprite</sprite>
     </sprites>
-    <sprite>sprites\ground</sprite>
+    <sprites name="Player">
+      <sprite>sprites\player_l_fall_sprite</sprite>
+      <sprite>sprites\player_l_jump_sprite</sprite>
+      <sprite>sprites\player_l_run_sprite</sprite>
+      <sprite>sprites\player_l_slide_sprite</sprite>
+      <sprite>sprites\player_l_stand_sprite</sprite>
+      <sprite>sprites\player_r_fall_sprite</sprite>
+      <sprite>sprites\player_r_jump_sprite</sprite>
+      <sprite>sprites\player_r_run_sprite</sprite>
+      <sprite>sprites\player_r_slide_sprite</sprite>
+      <sprite>sprites\player_r_stand_sprite</sprite>
+      <sprite>sprites\player_r_recoil_sprite</sprite>
+      <sprite>sprites\player_l_recoil_sprite</sprite>
+      <sprite>sprites\player_l_rest_sprite</sprite>
+      <sprite>sprites\player_r_rest_sprite</sprite>
+      <sprite>sprites\player_r_dash_sprite</sprite>
+      <sprite>sprites\player_l_dash_sprite</sprite>
+      <sprite>sprites\player_r_attack_sprite</sprite>
+      <sprite>sprites\player_l_attack_sprite</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprites name="SmallGround">
+        <sprite>sprites\smallground_l_patrol_sprite</sprite>
+        <sprite>sprites\smallground_r_patrol_sprite</sprite>
+        <sprite>sprites\smallground_l_attack_sprite</sprite>
+        <sprite>sprites\smallground_r_attack_sprite</sprite>
+        <sprite>sprites\smallgroundmask_sprite</sprite>
+      </sprites>
+      <sprites name="Medium">
+        <sprite>sprites\mground_l_patrol_sprite</sprite>
+        <sprite>sprites\mground_r_patrol_sprite</sprite>
+        <sprite>sprites\mground_l_attack_sprite</sprite>
+        <sprite>sprites\mground_r_attack_sprite</sprite>
+      </sprites>
+      <sprites name="Air">
+        <sprite>sprites\air_l_patrol_sprite</sprite>
+        <sprite>sprites\air_r_patrol_sprite</sprite>
+        <sprite>sprites\air_l_attack_sprite</sprite>
+        <sprite>sprites\air_r_attack_sprite</sprite>
+        <sprite>sprites\airmask_sprite</sprite>
+      </sprites>
+      <sprites name="LargeGround">
+        <sprite>sprites\lground_l_attack_sprite</sprite>
+        <sprite>sprites\lground_l_patrol_sprite</sprite>
+        <sprite>sprites\lground_r_attack_sprite</sprite>
+        <sprite>sprites\lground_r_patrol_sprite</sprite>
+        <sprite>sprites\lgroundmask_sprite</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\hb1_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\cave_bg</background>
@@ -27,6 +76,7 @@
   <scripts name="scripts">
     <scripts name="Player">
       <script>scripts\Player_Create.gml</script>
+      <script>scripts\Player_Step.gml</script>
       <script>scripts\Player_Draw.gml</script>
       <scripts name="States">
         <scripts name="Stand">
@@ -37,6 +87,7 @@
         </scripts>
         <scripts name="Jump">
           <script>scripts\Player_Jump.gml</script>
+          <script>scripts\Player_Jump_OnEnter.gml</script>
         </scripts>
         <scripts name="Crouch">
           <script>scripts\Player_Crouch.gml</script>
@@ -50,11 +101,19 @@
         <scripts name="Fall">
           <script>scripts\Player_Fall.gml</script>
         </scripts>
+        <scripts name="Slide">
+          <script>scripts\Player_Slide.gml</script>
+        </scripts>
+        <scripts name="Recoil">
+          <script>scripts\Player_Recoil.gml</script>
+        </scripts>
+        <scripts name="Rest">
+          <script>scripts\Player_Rest.gml</script>
+        </scripts>
       </scripts>
       <script>scripts\Player_X_Input.gml</script>
       <script>scripts\Player_X_Accelerate.gml</script>
       <script>scripts\Player_Detect_Dash.gml</script>
-      <script>scripts\Player_Step.gml</script>
     </scripts>
     <scripts name="StateTemplate">
       <script>scripts\State_Create.gml</script>
@@ -120,21 +179,81 @@
       <scripts name="SmallGround">
         <script>scripts\SmallGround_Create.gml</script>
         <script>scripts\SmallGround_Step.gml</script>
-        <script>scripts\SmallGround_Draw.gml</script>
-        <scripts name="Patrolling">
-          <script>scripts\SmallGround_Partrolling.gml</script>
+        <scripts name="Patrol">
+          <script>scripts\SmallGround_Patrol.gml</script>
+          <script>scripts\SmallGround_Patrol_OnEnter.gml</script>
         </scripts>
-        <scripts name="Attacking">
-          <script>scripts\SmallGround_Attacking.gml</script>
+        <scripts name="Attack">
+          <script>scripts\SmallGround_Attack.gml</script>
+          <script>scripts\SmallGround_Attack_OnEnter.gml</script>
         </scripts>
       </scripts>
+      <scripts name="MediumGround">
+        <script>scripts\MediumGround_Create.gml</script>
+        <script>scripts\MediumGround_Step.gml</script>
+        <scripts name="Patrol">
+          <script>scripts\MediumGround_Patrol.gml</script>
+          <script>scripts\MediumGround_Patrol_OnEnter.gml</script>
+        </scripts>
+        <scripts name="Attack">
+          <script>scripts\MediumGround_Attack.gml</script>
+          <script>scripts\MediumGround_Attack_OnEnter.gml</script>
+        </scripts>
+      </scripts>
+      <scripts name="Air">
+        <script>scripts\AirSpike_Create.gml</script>
+        <script>scripts\AirSpike_Step.gml</script>
+        <scripts name="Patrol">
+          <script>scripts\AirSpike_Patrol.gml</script>
+          <script>scripts\AirSpike_Patrol_OnEnter.gml</script>
+        </scripts>
+        <scripts name="Dive">
+          <script>scripts\AirSpike_Dive.gml</script>
+        </scripts>
+        <scripts name="Attack">
+          <script>scripts\AirSpike_Attack.gml</script>
+          <script>scripts\AirSpike_Attack_OnEnter.gml</script>
+        </scripts>
+      </scripts>
+      <scripts name="LargeGround">
+        <script>scripts\LargeGround_Create.gml</script>
+        <script>scripts\LargeGround_Step.gml</script>
+        <scripts name="Patrol">
+          <script>scripts\LargeGround_Patrol.gml</script>
+          <script>scripts\LargeGround_Patrol_OnEnter.gml</script>
+        </scripts>
+        <scripts name="Attack">
+          <script>scripts\LargeGround_Attack.gml</script>
+          <script>scripts\LargeGround_Attack_OnEnter.gml</script>
+        </scripts>
+      </scripts>
+      <script>scripts\Enemy_Draw.gml</script>
     </scripts>
     <scripts name="DamageHitbox">
-      <script>scripts\DamageHitbox_Step.gml</script>
       <script>scripts\DamageHitbox_Create.gml</script>
+      <script>scripts\DamageHitbox_Step.gml</script>
+    </scripts>
+    <scripts name="Gate">
+      <script>scripts\Gate_Create.gml</script>
+      <script>scripts\Gate_Step.gml</script>
+      <script>scripts\Gate_Draw.gml</script>
+      <scripts name="States">
+        <script>scripts\Gate_Unlocked.gml</script>
+        <script>scripts\Gate_Locked.gml</script>
+        <script>scripts\Gate_Unlocking.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Key">
+      <script>scripts\Key_Create.gml</script>
+    </scripts>
+    <scripts name="HeartBeat">
+      <script>scripts\HeartBeat_Create.gml</script>
+      <script>scripts\HeartBeat_Step.gml</script>
+      <script>scripts\HeartBeat_Draw.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
+    <object>objects\HeartBeat</object>
     <object>objects\Player</object>
     <object>objects\Solid</object>
     <object>objects\SemiSolid</object>
@@ -160,6 +279,13 @@
       <object>objects\CreditsButton</object>
       <object>objects\CreditsExitButton</object>
       <object>objects\CreditsObject</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\Enemy</object>
+      <object>objects\SmallGround</object>
+      <object>objects\MediumGround</object>
+      <object>objects\AirSpike</object>
+      <object>objects\LargeGround</object>
     </objects>
   </objects>
   <rooms name="rooms">
