@@ -12,6 +12,7 @@ instance_create(x, y, Camera);  // create camera object to act as the viewport f
 
 motion = instance_create(0, 0, ForceAggregator);
 vel = instance_create(0, 0, Force);
+heart = instance_create(0,0, HeartBeat);
 
 vel.xmax = 14;      // @maximum horizontal velocity
 vel.xcap = 14;      // maximum horizontal speed
@@ -25,6 +26,7 @@ vel.yacl = 2.1;     // @gravity
 motion.decay = 0.8;
 
 Force_Attach(vel, motion);
+
 
 stand = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting
   stand.main = Player_Stand;                        // link Player_Stand as script for step event
@@ -42,6 +44,7 @@ run = instance_create(0, 0, StateTemplate);         // represents horizontal mot
   
 jump = instance_create(0, 0, StateTemplate);        // Represents upwards vertical motion **ONLY**
   jump.main = Player_Jump;                          // link Player_jump as script to be called each frame
+  jump.onEnter = Player_Jump_OnEnter;
   jump.sprite = instance_create(0, 0, Animation);   // create an animation object to represent rising portion of jump
     jump.sprite.left = player_l_jump_sprite;        // left facing jump sprite
     jump.sprite.right = player_r_jump_sprite;       // right facing jump sprite
@@ -89,4 +92,12 @@ recoil.sprite = instance_create(0,0,Animation);
     recoil.sprite.right = player_r_recoil_sprite;
   Animation_Refresh(recoil.sprite);
 
+  
+rest = instance_create(0,0, StateTemplate);
+rest.main = Player_Rest;
+rest.sprite = instance_create(0,0,Animation);
+rest.sprite.left = 
+rest.sprite.right = 
+Animation_Refresh(rest.sprite);
+  
 state = stand; state_last = stand; state_next = stand;  // state represents current state, state_last and state_next represent previous or next set state respectively

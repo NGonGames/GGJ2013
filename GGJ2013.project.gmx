@@ -30,6 +30,8 @@
       <sprite>sprites\player_r_stand_sprite</sprite>
       <sprite>sprites\player_r_recoil_sprite</sprite>
       <sprite>sprites\player_l_recoil_sprite</sprite>
+      <sprite>sprites\player_l_rest_sprite</sprite>
+      <sprite>sprites\player_r_rest_sprite</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="SmallGround">
@@ -55,6 +57,7 @@
         </scripts>
         <scripts name="Jump">
           <script>scripts\Player_Jump.gml</script>
+          <script>scripts\Player_Jump_OnEnter.gml</script>
         </scripts>
         <scripts name="Crouch">
           <script>scripts\Player_Crouch.gml</script>
@@ -75,6 +78,9 @@
           <script>scripts\Player_Recoil.gml</script>
           <script>scripts\Player_Recoil_OnEnter.gml</script>
           <script>scripts\Player_Recoil_OnExit.gml</script>
+        </scripts>
+        <scripts name="Rest">
+          <script>scripts\Player_Rest.gml</script>
         </scripts>
       </scripts>
       <script>scripts\Player_X_Input.gml</script>
@@ -161,6 +167,24 @@
       <script>scripts\DamageHitbox_Step.gml</script>
       <script>scripts\DamageHitbox_Create.gml</script>
     </scripts>
+    <scripts name="Gate">
+      <script>scripts\Gate_Create.gml</script>
+      <script>scripts\Gate_Step.gml</script>
+      <script>scripts\Gate_Draw.gml</script>
+      <scripts name="States">
+        <script>scripts\Gate_Unlocked.gml</script>
+        <script>scripts\Gate_Locked.gml</script>
+        <script>scripts\Gate_Unlocking.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Key">
+      <script>scripts\Key_Create.gml</script>
+    </scripts>
+    <scripts name="HeartBeat">
+      <script>scripts\HeartBeat_Create.gml</script>
+      <script>scripts\HeartBeat_Step.gml</script>
+      <script>scripts\HeartBeat_Draw.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\Player</object>
@@ -192,6 +216,7 @@
     <objects name="Enemies">
       <object>objects\SmallGround</object>
     </objects>
+    <object>objects\HeartBeat</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\setup</room>
