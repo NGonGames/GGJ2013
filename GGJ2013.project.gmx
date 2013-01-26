@@ -118,10 +118,11 @@
         <script>scripts\SmallGround_Step.gml</script>
         <script>scripts\SmallGround_Draw.gml</script>
         <scripts name="Patrolling">
-          <script>scripts\SmallGround_Partrolling.gml</script>
+          <script>scripts\SmallGround_Partrol.gml</script>
+          <script>scripts\SmallGround_Patrol_OnEnter.gml</script>
         </scripts>
         <scripts name="Attacking">
-          <script>scripts\SmallGround_Attacking.gml</script>
+          <script>scripts\SmallGround_Attack.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -156,6 +157,9 @@
       <object>objects\CreditsButton</object>
       <object>objects\CreditsExitButton</object>
       <object>objects\CreditsObject</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\SmallGround</object>
     </objects>
   </objects>
   <rooms name="rooms">

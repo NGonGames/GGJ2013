@@ -22,6 +22,7 @@ vel.fric = 1.1;     // @horizontal friction
 vel.ymax = 15;      // @maximum falling speed
 vel.yacl = 2.1;     // @gravity
 
+motion.decay = 0.99;
 Force_Attach(vel, motion);
 
 stand = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting
