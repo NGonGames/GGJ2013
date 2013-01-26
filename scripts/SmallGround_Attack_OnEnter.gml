@@ -5,8 +5,9 @@ with(instance_create(x,y,DamageHitbox)) {
     force = instance_create(0,0,Force);
     force.impulse = true;
     force.x = 10;
-    force.y = -10;
+    force.y = 10;
     sprite_index = other.sprite_index;
     damageHitbox = id;
 }
+
 state.sprite.index = 0;

@@ -28,6 +28,16 @@
       <sprite>sprites\player_r_run_sprite</sprite>
       <sprite>sprites\player_r_slide_sprite</sprite>
       <sprite>sprites\player_r_stand_sprite</sprite>
+      <sprite>sprites\player_r_recoil_sprite</sprite>
+      <sprite>sprites\player_l_recoil_sprite</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprites name="SmallGround">
+        <sprite>sprites\smallground_l_patrol_sprite</sprite>
+        <sprite>sprites\smallground_r_patrol_sprite</sprite>
+        <sprite>sprites\smallground_l_attack_sprite</sprite>
+        <sprite>sprites\smallground_r_attack_sprite</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -63,6 +73,8 @@
         </scripts>
         <scripts name="Recoil">
           <script>scripts\Player_Recoil.gml</script>
+          <script>scripts\Player_Recoil_OnEnter.gml</script>
+          <script>scripts\Player_Recoil_OnExit.gml</script>
         </scripts>
       </scripts>
       <script>scripts\Player_X_Input.gml</script>

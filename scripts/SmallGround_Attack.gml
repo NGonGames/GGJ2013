@@ -1,5 +1,5 @@
 //clean up force and dmgHitbox after attack animation.
-if(state.age >= state.sprite.length+20) {/*
+if(state.age >= state.sprite.length) {/*
     with(damageHitbox) {
         if(damageHitbox != -1) {
             with(force) {

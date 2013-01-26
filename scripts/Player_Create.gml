@@ -79,11 +79,14 @@ dash = instance_create(0, 0, StateTemplate);        // Represents dashing motion
   dash.xbegin = 0;                                  // starting x position of a dash, to measure against the 'length' property
 
 attack = instance_create(0, 0, StateTemplate);      // Represents attacking action
+
 recoil = instance_create(0, 0, StateTemplate);      // Represents being hurt
 recoil.main = Player_Recoil;
+recoil.onExit = Player_Recoil_OnExit;
+recoil.onEnter = Player_Recoil_OnEnter;
 recoil.sprite = instance_create(0,0,Animation);
-    recoil.sprite.left = sprite_index;
-    recoil.sprite.right = sprite_index;
+    recoil.sprite.left = player_l_recoil_sprite;
+    recoil.sprite.right = player_r_recoil_sprite;
   Animation_Refresh(recoil.sprite);
 
 state = stand; state_last = stand; state_next = stand;  // state represents current state, state_last and state_next represent previous or next set state respectively
