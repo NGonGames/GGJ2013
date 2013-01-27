@@ -6,7 +6,13 @@ if(place_meeting(x,y,DamageHitbox)) {
         Force_Attach(i.force,motion);
         show_debug_message(string(i.force.x));
         hp -= i.damage;
-        Player.heart.heartCur += 8;
+        if(i.owner.object_index == PlayerBulletFire)
+        {
+            Player.heart.heartCur += 1;            
+        }
+        else {
+            Player.heart.heartCur += 8;
+        }
         with(i) {
             with(i.owner) {
                 instance_destroy();   
