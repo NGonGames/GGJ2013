@@ -75,6 +75,7 @@
       <sprite>sprites\health_sprite</sprite>
       <sprite>sprites\dialog_sprite</sprite>
       <sprite>sprites\pausemenu_sprite</sprite>
+      <sprite>sprites\weapon_sprite</sprite>
     </sprites>
     <sprites name="Bullets">
       <sprite>sprites\mgp_r_sprite</sprite>
@@ -83,8 +84,6 @@
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
-    <sprite>sprites\pausemenu_sprite</sprite>
-      <sprite>sprites\weapon_sprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -284,6 +283,26 @@
     <scripts name="PlayerBullet">
       <script>scripts\PlayerBullet_Create.gml</script>
       <script>scripts\PlayerBullet_Step.gml</script>
+      <scripts name="PlayerBulletAxe">
+        <script>scripts\PlayerBulletAxe_Create.gml</script>
+        <script>scripts\PlayerBulletAxe_Step.gml</script>
+      </scripts>
+      <scripts name="PlayerBulletGrenade">
+        <script>scripts\PlayerBulletGrenade_Create.gml</script>
+        <script>scripts\PlayerBulletGrenade_Step.gml</script>
+      </scripts>
+      <scripts name="PlayerBulletIce">
+        <script>scripts\PlayerBulletIce_Create.gml</script>
+        <script>scripts\PlayerBulletIce_Step.gml</script>
+      </scripts>
+      <scripts name="PlayerBulletFire">
+        <script>scripts\PlayerBulletFire_Create.gml</script>
+        <script>scripts\PlayerBulletFire_Step.gml</script>
+      </scripts>
+      <scripts name="PlayerBulletSin">
+        <script>scripts\PlayerBulletSin_Create.gml</script>
+        <script>scripts\PlayerBulletSin_Step.gml</script>
+      </scripts>
     </scripts>
     <scripts name="PauseMenu">
       <script>scripts\PauseMenu_Create.gml</script>
@@ -349,6 +368,11 @@
     <objects name="Bullets">
       <object>objects\PlayerBullet</object>
       <object>objects\MediumGroundBullet</object>
+      <object>objects\PlayerBulletAxe</object>
+      <object>objects\PlayerBulletGrenade</object>
+      <object>objects\PlayerBulletIce</object>
+      <object>objects\PlayerBulletFire</object>
+      <object>objects\PlayerBulletSin</object>
     </objects>
     <object>objects\Key</object>
     <object>objects\Weapon</object>
