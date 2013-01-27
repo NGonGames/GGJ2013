@@ -476,6 +476,7 @@
     <room>rooms\thepit_rm</room>
     <room>rooms\temple_of_the_golden_god_rm</room>
     <room>rooms\room14</room>
+    <room>rooms\intro_cinematic_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
