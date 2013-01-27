@@ -73,6 +73,7 @@
       <sprite>sprites\hb4_sprite</sprite>
       <sprite>sprites\hb5_sprite</sprite>
       <sprite>sprites\health_sprite</sprite>
+      <sprite>sprites\pausemenu_sprite</sprite>
     </sprites>
     <sprite>sprites\key_sprite</sprite>
     <sprites name="Bullets">
@@ -80,7 +81,6 @@
       <sprite>sprites\mgp_l_sprite</sprite>
     </sprites>
     <sprite>sprites\bullet0_r_sprite</sprite>
-    <sprite>sprites\pausemenu_sprite</sprite>
     <sprite>sprites\weapon_sprite</sprite>
   </sprites>
   <backgrounds name="background">
@@ -291,6 +291,9 @@
       <script>scripts\MediumGroundBullet_Step.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <object>objects\HeartBeat</object>
     <object>objects\Player</object>
