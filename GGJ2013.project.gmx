@@ -477,6 +477,7 @@
     <object>objects\NPC</object>
     <object>objects\Dialog</object>
     <object>objects\MovingPlatform</object>
+    <object>objects\ParallaxBG</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\setup</room>
