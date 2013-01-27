@@ -1,5 +1,5 @@
 
-if (abs(Player.vel.x) > Player.vel.xcap / 2) {
+if (abs(Player.vel.x) > Player.vel.xcap / 2 && Player.state != Player.slide) {
     time[0] += 1;
 } else {
     time[0] = 0;
