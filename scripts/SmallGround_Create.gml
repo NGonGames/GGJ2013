@@ -27,4 +27,7 @@ attack = instance_create(0, 0, StateTemplate);       // represents normal, stati
     attack.sprite.right = smallground_r_attack_sprite;              // right facing idle sprite ID
   Animation_Refresh(attack.sprite);
   
+dazed.sprite.left = patrol.sprite.left;
+dazed.sprite.right = patrol.sprite.right;
+  
 state = patrol; state_last = patrol; state_next = patrol; 

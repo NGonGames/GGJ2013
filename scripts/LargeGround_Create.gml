@@ -30,5 +30,6 @@ attack = instance_create(0, 0, StateTemplate);       // represents normal, stati
   Animation_Refresh(attack.sprite);
   attack.cooldown = 0;
   attack.xspd = 10;
-  
+  dazed.sprite.left = patrol.sprite.left;
+dazed.sprite.right = patrol.sprite.right;
 state = patrol; state_last = patrol; state_next = patrol; 

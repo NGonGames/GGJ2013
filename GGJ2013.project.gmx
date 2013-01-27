@@ -84,6 +84,7 @@
       <sprite>sprites\bulletaxe_sprite</sprite>
       <sprite>sprites\bulletice_sprite</sprite>
       <sprite>sprites\bulletgrenade_sprite</sprite>
+      <sprite>sprites\grenadeexplosion_sprite</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
@@ -264,6 +265,7 @@
       <script>scripts\Enemy_Step.gml</script>
       <script>scripts\Enemy_Create.gml</script>
       <script>scripts\Enemy_Destroy.gml</script>
+      <script>scripts\Enemy_Dazed.gml</script>
     </scripts>
     <scripts name="DamageHitbox">
       <script>scripts\DamageHitbox_Create.gml</script>
@@ -304,6 +306,7 @@
       <scripts name="PlayerBulletGrenade">
         <script>scripts\PlayerBulletGrenade_Create.gml</script>
         <script>scripts\PlayerBulletGrenade_Step.gml</script>
+        <script>scripts\PlayerBulletGrenade_Destroy.gml</script>
       </scripts>
       <scripts name="PlayerBulletIce">
         <script>scripts\PlayerBulletIce_Create.gml</script>
@@ -320,6 +323,10 @@
       <scripts name="PlayerBulletHand">
         <script>scripts\PlayerBulletHand_Create.gml</script>
         <script>scripts\PlayerBulletHand_Step.gml</script>
+      </scripts>
+      <scripts name="GrenadeExplosion">
+        <script>scripts\GrenadeExplosion_Step.gml</script>
+        <script>scripts\GrenadeExplosion_Create.gml</script>
       </scripts>
     </scripts>
     <scripts name="PauseMenu">
@@ -396,6 +403,7 @@
       <object>objects\PlayerBulletFire</object>
       <object>objects\PlayerBulletSin</object>
       <object>objects\PlayerBulletHand</object>
+      <object>objects\GrenadeExplosion</object>
     </objects>
     <object>objects\Key</object>
     <object>objects\Weapon</object>

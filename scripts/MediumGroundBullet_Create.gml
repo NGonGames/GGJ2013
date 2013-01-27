@@ -1,7 +1,7 @@
 event_inherited();
 motion = instance_create(0,0,ForceAggregator);
 
-sprite_index = mgp_r_sprite;
+sprite_index = mgp_sprite;
 with (instance_create(x, y, DamageHitbox)) {
     owner = other.id;
     damage = 10;
