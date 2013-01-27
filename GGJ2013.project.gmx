@@ -478,7 +478,6 @@
     <object>objects\Dialog</object>
     <object>objects\MovingPlatform</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\setup</room>
     <room>rooms\menu_rm</room>
