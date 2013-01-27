@@ -450,6 +450,7 @@
     <object>objects\NPC</object>
     <object>objects\Dialog</object>
     <object>objects\MovingPlatform</object>
+    <object>objects\ParallaxBG</object>
   </objects>
   <timelines name="timelines"/>
   <rooms name="rooms">
