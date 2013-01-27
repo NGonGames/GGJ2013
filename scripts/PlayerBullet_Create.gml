@@ -1,7 +1,7 @@
 event_inherited();
 motion = instance_create(0,0,ForceAggregator);
 
-sprite_index = air_r_attack_sprite;
+sprite_index = bullet0_r_sprite;
 with (instance_create(x, y, DamageHitbox)) {
     owner = other.id;
     damage = 10;
@@ -15,12 +15,13 @@ with (instance_create(x, y, DamageHitbox)) {
 }
 
 vel = instance_create(0,0,Force);
-vel.x = sign(Player.vel.xmax) * 10;
+vel.x = sign(Player.vel.xmax) * 20;
 vel.y = 0;
+image_xscale = sign(Player.vel.xmax);
 
 sprite = instance_create(0, 0, Animation);
-sprite.left = air_l_attack_sprite;
-sprite.right = air_r_attack_sprite;
+sprite.left = bullet0_r_sprite;
+sprite.right = bullet0_r_sprite;
 Animation_Refresh(sprite);
 
 Force_Attach(vel, motion);

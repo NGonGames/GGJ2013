@@ -1,7 +1,6 @@
 event_inherited();
 if(place_meeting(x,y,DamageHitbox)) {
     var i = instance_place(x,y,DamageHitbox);
-    show_debug_message("collision with bullet");
     if(i.type == "player") {
         //destroy player bullet and reduce hp
         

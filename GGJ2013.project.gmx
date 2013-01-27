@@ -75,6 +75,9 @@
       <sprite>sprites\health_sprite</sprite>
     </sprites>
     <sprite>sprites\key_sprite</sprite>
+    <sprite>sprites\bullet0_r_sprite</sprite>
+    <sprite>sprites\pausemenu_sprite</sprite>
+    <sprite>sprites\weapon_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\cave_bg</background>
