@@ -6,5 +6,8 @@ if (state.age >= state.sprite.length / state.sprite.rate) {
 
 vel.y += vel.yacl;
 
+Player_X_Input();
+Player_X_Accelerate();
+
 Move_X(motion);
 Move_Y(motion);
