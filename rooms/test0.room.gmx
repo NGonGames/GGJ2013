@@ -56,7 +56,6 @@
     <instance objName="Solid" x="32" y="0" name="inst_E959307E" locked="0" code="" scaleX="60.5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Player" x="224" y="768" name="inst_E51A3588" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Door" x="1760" y="384" name="inst_7B441333" locked="0" code="rm = worm_rm;&#xA;rx = 128;&#xA;ry = 128;&#xA;auto = true;" scaleX="2.5" scaleY="4.5" colour="4294967295" rotation="0"/>
-    <instance objName="Solid" x="544" y="704" name="inst_049E72D9" locked="0" code="" scaleX="6" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="1632" y="544" name="inst_4847EEB1" locked="0" code="" scaleX="7" scaleY="4.12903213500977" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="1120" y="512" name="inst_E812C466" locked="0" code="" scaleX="3.09677004814148" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="512" y="704" name="inst_A2EE384D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
