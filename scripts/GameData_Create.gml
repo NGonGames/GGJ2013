@@ -6,6 +6,7 @@ global.player_start_y = noone;
 
 num_keys = 0;
 level = 1;
+
 item[0] = true;
 item[1] = false;
 item[2] = false;

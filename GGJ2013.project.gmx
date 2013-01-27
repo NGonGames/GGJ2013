@@ -83,6 +83,7 @@
       <sprite>sprites\bulletfire_sprite</sprite>
       <sprite>sprites\bulletaxe_sprite</sprite>
       <sprite>sprites\bulletice_sprite</sprite>
+      <sprite>sprites\bulletgrenade_sprite</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
@@ -92,6 +93,16 @@
   <backgrounds name="background">
     <background>background\cave_bg</background>
     <background>background\city_bg</background>
+    <background>background\house2</background>
+    <background>background\house_bg1</background>
+    <background>background\woods</background>
+    <background>background\background6</background>
+    <background>background\inside_bg</background>
+    <background>background\ice_bg</background>
+    <background>background\mountain</background>
+    <background>background\icewalk_bg</background>
+    <background>background\icewalk2_bg</background>
+    <background>background\background12</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -400,6 +411,8 @@
     <room>rooms\worm_rm</room>
     <room>rooms\dark_forest_rm</room>
     <room>rooms\start_rm</room>
+    <room>rooms\ice_mtn_rm</room>
+    <room>rooms\ice_king_lair_rm</room>
     <room>rooms\lostinn_rm</room>
     <room>rooms\test1</room>
     <room>rooms\merch_rm</room>
