@@ -55,8 +55,8 @@
     <instance objName="Solid" x="1984" y="0" name="inst_648C302A" locked="0" code="" scaleX="-4" scaleY="30.5" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="32" y="0" name="inst_E959307E" locked="0" code="" scaleX="60.5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Player" x="224" y="768" name="inst_E51A3588" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="IceBoss" x="1440" y="640" name="inst_6DEB7D7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Door" x="1824" y="800" name="inst_47DD04A5" locked="0" code="rm = test0;&#xA;rx = 300;&#xA;ry = 300;&#xA;auto = true;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FireBoss" x="1408" y="608" name="inst_1E4871AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="inside_bg" x="96" y="832" w="32" h="32" xo="128" yo="128" id="10000769" name="inst_1073AA76" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

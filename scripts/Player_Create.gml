@@ -5,6 +5,13 @@ if (global.player_start_x != noone && global.player_start_y != noone) {
     global.player_start_y = noone;
 }
 
+GameData.save_x = x;
+GameData.save_y = y;
+GameData.save_room = room;
+with (GameData) {
+    GameData_Save();
+}
+
 instance_create(x, y, Camera);  // create camera object to act as the viewport for the player
 heart = instance_create(0,0, HeartBeat);
 heart.xbegin = 12;

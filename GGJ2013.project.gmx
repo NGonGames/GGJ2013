@@ -105,6 +105,8 @@
       <sprite>sprites\bulletgrenade_sprite</sprite>
       <sprite>sprites\grenadeexplosion_sprite</sprite>
       <sprite>sprites\icebossbullet_sprite</sprite>
+      <sprite>sprites\icespecial_sprite</sprite>
+      <sprite>sprites\firespecial_sprite</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
@@ -134,15 +136,25 @@
     <background>background\background6</background>
     <background>background\inside_bg</background>
     <background>background\ice_bg</background>
-    <background>background\mountain</background>
+    <background>background\mountain_1_bg</background>
     <background>background\icewalk_bg</background>
     <background>background\icewalk2_bg</background>
     <background>background\ice_cave</background>
+    <background>background\background17</background>
     <background>background\dirt_bg</background>
     <background>background\ice_ground_bg</background>
     <background>background\ice_ground_left_bg</background>
     <background>background\ice_ground_right_bg</background>
     <background>background\background16</background>
+    <background>background\ice_king_bg</background>
+    <background>background\rock_bg</background>
+    <background>background\coal_bg</background>
+    <background>background\coal_walk_way</background>
+    <background>background\background26</background>
+    <background>background\background24</background>
+    <background>background\background25</background>
+    <background>background\coal_cave</background>
+    <background>background\background23</background>
     <background>background\start_screen</background>
   </backgrounds>
   <paths name="paths"/>
@@ -224,6 +236,8 @@
       <scripts name="Data">
         <script>scripts\GameData_Create.gml</script>
         <script>scripts\GameData_Step.gml</script>
+        <script>scripts\GameData_Save.gml</script>
+        <script>scripts\GameData_Load.gml</script>
       </scripts>
       <script>scripts\Move_X.gml</script>
       <script>scripts\Move_Y.gml</script>
@@ -434,6 +448,7 @@
     <scripts name="BossSpecials">
       <scripts name="Fire">
         <script>scripts\FireSpecial_Create.gml</script>
+        <script>scripts\FireSpecial_Step.gml</script>
       </scripts>
       <scripts name="Ice">
         <script>scripts\IceSpecial_Create.gml</script>
@@ -488,6 +503,7 @@
       <object>objects\AirSpike</object>
       <object>objects\LargeGround</object>
       <object>objects\IceBoss</object>
+      <object>objects\FireBoss</object>
     </objects>
     <objects name="Bullets">
       <object>objects\PlayerBullet</object>
@@ -502,10 +518,11 @@
       <object>objects\IceBossBullet</object>
       <object>objects\FireBossBullet</object>
       <object>objects\IceSpecial</object>
+      <object>objects\FireSpecial</object>
     </objects>
     <object>objects\Key</object>
-    <object>objects\Gate</object>
     <object>objects\Weapon</object>
+    <object>objects\Gate</object>
     <object>objects\NPC</object>
     <object>objects\Dialog</object>
     <object>objects\MovingPlatform</object>

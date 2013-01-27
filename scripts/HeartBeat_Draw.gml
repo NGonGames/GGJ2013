@@ -2,16 +2,14 @@ var w = display_get_gui_width();
 
 draw_sprite_ext(heartrace_sprite, 0, 0, 0, 1, 1, 0, c_white, heartCur / heartMax);
 
-if (heartCur > 80) {
+if (heartCur > 75) {
     draw_sprite_ext(heartrace_sprite, 0, 0, 0, 1, 1, 0, c_white, heartCur / heartMax);
-} else if (heartCur > 60) {
+} else if (heartCur > 50) {
     draw_sprite_ext(heartrace_sprite, 1, 0, 0, 1, 1, 0, c_white, heartCur / heartMax);
-} else if (heartCur > 40) {
+} else if (heartCur > 25) {
     draw_sprite_ext(heartrace_sprite, 2, 0, 0, 1, 1, 0, c_white, heartCur / heartMax);
-} else if (heartCur > 20) {
-    draw_sprite_ext(heartrace_sprite, 3, 0, 0, 1, 1, 0, c_white, heartCur / heartMax);
 } else {
-    draw_sprite_ext(heartrace_sprite, 4, 0, 0, 1, 1, 0, c_white, heartCur / heartMax);
+    draw_sprite_ext(heartrace_sprite, 3, 0, 0, 1, 1, 0, c_white, heartCur / heartMax);
 }
 
 draw_sprite(health_sprite, 0, 0, 0);
