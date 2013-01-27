@@ -222,6 +222,8 @@
       <scripts name="Data">
         <script>scripts\GameData_Create.gml</script>
         <script>scripts\GameData_Step.gml</script>
+        <script>scripts\GameData_Save.gml</script>
+        <script>scripts\GameData_Load.gml</script>
       </scripts>
       <script>scripts\Move_X.gml</script>
       <script>scripts\Move_Y.gml</script>
@@ -504,8 +506,8 @@
       <object>objects\FireSpecial</object>
     </objects>
     <object>objects\Key</object>
-    <object>objects\Gate</object>
     <object>objects\Weapon</object>
+    <object>objects\Gate</object>
     <object>objects\NPC</object>
     <object>objects\Dialog</object>
     <object>objects\MovingPlatform</object>

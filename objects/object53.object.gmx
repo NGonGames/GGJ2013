@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>w_id = 0;
+            <string>k_id = 0;
 alarm[0] = 1;
 </string>
           </argument>
@@ -49,11 +49,11 @@ alarm[0] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (w_id == 0) {
-    show_error("You forgot to inialize a weapon in room " + room_get_name(room), false);
+            <string>if (k_id == 0) {
+    show_error("You forgot to inialize a key in room " + room_get_name(room), false);
     exit;
 }
-if (GameData.item[w_id]) {
+if (GameData.key[k_id]) {
     instance_destroy();
 }
 </string>

@@ -3,3 +3,5 @@ if (Input_Pressed(Input.quit)) {
         game_end();
     }
 }
+
+item[0] = 1;
