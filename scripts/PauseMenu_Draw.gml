@@ -7,7 +7,7 @@ draw_sprite(pausemenu_sprite, 0, 0, 0);
 //draw weapon images
 for (var i = 114, j = 0; i < 920; i += 159) {
     draw_sprite(weapon_sprite,
-        iff(GameData.item[j], j + 6 * iff(GameData.weapon == j, 0, 1), sprite_get_number(weapon_sprite) - 1),
+        iff(GameData.item[j], j + 6 * iff(GameData.weapon == j, 1, 0), sprite_get_number(weapon_sprite) - 1),
         i - sprite_get_width(weapon_sprite)/2,
         401 - sprite_get_height(weapon_sprite)/2);
     j++
