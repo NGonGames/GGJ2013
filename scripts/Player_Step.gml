@@ -1,3 +1,6 @@
+var diff = heart.xend - heart.xbegin;
+vel.xcap = heart.xbegin + diff * (heart.heartCur / heart.heartMax);
+
 event_inherited();
 if(place_meeting(x, y, DamageHitbox) && state != recoil) {
     if(instance_place(x, y,DamageHitbox).type != "player") {

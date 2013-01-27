@@ -9,6 +9,8 @@ instance_create(x, y, Camera);  // create camera object to act as the viewport f
 heart = instance_create(0,0, HeartBeat);
 heart.xbegin = 12;
 heart.xend = 16;
+heart.as_low = .8;
+heart.as_high = 2;
 hp = 100;
 
     /** -- Any variable description preceded by @ is 

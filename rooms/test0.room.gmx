@@ -58,10 +58,9 @@
     <instance objName="Player" x="128" y="416" name="inst_E51A3588" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Door" x="1472" y="928" name="inst_7B441333" locked="0" code="rm = test1;&#xA;rx = 1400;&#xA;ry = 420;&#xA;auto = false;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="AirSpike" x="432" y="752" name="inst_B0F05CB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="LargeGround" x="928" y="400" name="inst_7EF23432" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Weapon" x="-368" y="-112" name="inst_2CE83A56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MediumGround" x="640" y="864" name="inst_610AFEAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="MediumGround" x="416" y="384" name="inst_DBAF3BCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="NPC" x="688" y="416" name="inst_A19FF82D" locked="0" code="msg = &quot;Scott is sooooooooooo gay.&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

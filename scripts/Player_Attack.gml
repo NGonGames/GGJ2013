@@ -1,6 +1,6 @@
 if (state.age == 0) {};
 
-if (state.age >= state.sprite.length) {
+if (state.age >= state.sprite.length / state.sprite.rate) {
     State_Change(stand);
 }
 

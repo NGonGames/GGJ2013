@@ -73,15 +73,19 @@
       <sprite>sprites\hb4_sprite</sprite>
       <sprite>sprites\hb5_sprite</sprite>
       <sprite>sprites\health_sprite</sprite>
+      <sprite>sprites\dialog_sprite</sprite>
       <sprite>sprites\pausemenu_sprite</sprite>
     </sprites>
-    <sprite>sprites\key_sprite</sprite>
     <sprites name="Bullets">
       <sprite>sprites\mgp_r_sprite</sprite>
       <sprite>sprites\mgp_l_sprite</sprite>
+      <sprite>sprites\bullet0_r_sprite</sprite>
     </sprites>
-    <sprite>sprites\bullet0_r_sprite</sprite>
-    <sprite>sprites\weapon_sprite</sprite>
+    <sprites name="Misc">
+      <sprite>sprites\npcmask_sprite</sprite>
+    <sprite>sprites\pausemenu_sprite</sprite>
+      <sprite>sprites\weapon_sprite</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\cave_bg</background>
@@ -290,9 +294,20 @@
       <script>scripts\MediumGroundBullet_Create.gml</script>
       <script>scripts\MediumGroundBullet_Step.gml</script>
     </scripts>
+    <scripts name="NPC">
+      <script>scripts\NPC_Create.gml</script>
+      <script>scripts\NPC_Step.gml</script>
+      <script>scripts\NPC_Draw.gml</script>
+    </scripts>
+    <scripts name="Dialog">
+      <script>scripts\Dialog_Create.gml</script>
+      <script>scripts\Dialog_Step.gml</script>
+      <script>scripts\Dialog_Draw.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
+    <font>fonts\npc_font</font>
   </fonts>
   <objects name="objects">
     <object>objects\HeartBeat</object>
@@ -337,6 +352,8 @@
     </objects>
     <object>objects\Key</object>
     <object>objects\Weapon</object>
+    <object>objects\NPC</object>
+    <object>objects\Dialog</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\setup</room>
