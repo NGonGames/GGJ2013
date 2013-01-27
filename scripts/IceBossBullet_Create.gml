@@ -15,6 +15,8 @@ with (instance_create(x, y, DamageHitbox)) {
 }
 
 vel = instance_create(0,0,Force);
-vel.y = 2;
+vel.y = 0;
+vel.yacl = 2;
+vel.x = 15;
 
 Force_Attach(vel, motion);

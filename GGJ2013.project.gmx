@@ -365,6 +365,7 @@
         <script>scripts\GrenadeExplosion_Step.gml</script>
         <script>scripts\GrenadeExplosion_Create.gml</script>
       </scripts>
+      <script>scripts\PlayerBullet_Destroy.gml</script>
     </scripts>
     <scripts name="PauseMenu">
       <script>scripts\PauseMenu_Create.gml</script>

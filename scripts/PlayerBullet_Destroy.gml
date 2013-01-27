@@ -1,5 +1,5 @@
-if(force != -1) {
-    with(force) {
+if (motion) {
+    with (motion) {
         instance_destroy();
     }
 }
