@@ -1,6 +1,6 @@
 if (abs(x - patrol.startx) > patrol.distance || place_meeting(x + sign (vel.x), y, Solid) || place_meeting(x + sign(vel.x), y, Enemy) ||
  (!place_meeting(x + sign(vel.x), y + 1, Solid) && !place_meeting(x + sign(vel.x), y + 2, Solid))) {
-    vel.x *= -1
+    vel.x *= -1;
 }
 
 vel.y += vel.yacl;

@@ -75,6 +75,10 @@
       <sprite>sprites\health_sprite</sprite>
     </sprites>
     <sprite>sprites\key_sprite</sprite>
+    <sprites name="Bullets">
+      <sprite>sprites\mgp_r_sprite</sprite>
+      <sprite>sprites\mgp_l_sprite</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\cave_bg</background>
@@ -279,6 +283,10 @@
       <script>scripts\PauseMenu_Step.gml</script>
       <script>scripts\PauseMenu_Draw.gml</script>
     </scripts>
+    <scripts name="MediumGroundBullet">
+      <script>scripts\MediumGroundBullet_Create.gml</script>
+      <script>scripts\MediumGroundBullet_Step.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\HeartBeat</object>
@@ -319,6 +327,7 @@
     </objects>
     <objects name="Bullets">
       <object>objects\PlayerBullet</object>
+      <object>objects\MediumGroundBullet</object>
     </objects>
     <object>objects\Key</object>
     <object>objects\Weapon</object>
