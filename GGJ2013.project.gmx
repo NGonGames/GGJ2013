@@ -67,7 +67,15 @@
         <sprite>sprites\lgroundmask_sprite</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\hb1_sprite</sprite>
+    <sprites name="GUI">
+      <sprite>sprites\hb1_sprite</sprite>
+      <sprite>sprites\hb2_sprite</sprite>
+      <sprite>sprites\hb3_sprite</sprite>
+      <sprite>sprites\hb4_sprite</sprite>
+      <sprite>sprites\hb5_sprite</sprite>
+      <sprite>sprites\health_sprite</sprite>
+    </sprites>
+    <sprite>sprites\key_sprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -249,6 +257,11 @@
       <script>scripts\HeartBeat_Step.gml</script>
       <script>scripts\HeartBeat_Draw.gml</script>
     </scripts>
+    <scripts name="PauseMenu">
+      <script>scripts\PauseMenu_Create.gml</script>
+      <script>scripts\PauseMenu_Step.gml</script>
+      <script>scripts\PauseMenu_Draw.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\HeartBeat</object>
@@ -269,6 +282,7 @@
       <object>objects\Force</object>
       <object>objects\DamageHitbox</object>
       <object>objects\StateObject</object>
+      <object>objects\PauseMenu</object>
     </objects>
     <objects name="Menu">
       <object>objects\PlayButton</object>
@@ -285,6 +299,8 @@
       <object>objects\AirSpike</object>
       <object>objects\LargeGround</object>
     </objects>
+    <object>objects\Key</object>
+    <object>objects\Weapon</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\setup</room>

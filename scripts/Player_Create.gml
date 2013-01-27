@@ -7,6 +7,9 @@ if (global.player_start_x != noone && global.player_start_y != noone) {
 
 instance_create(x, y, Camera);  // create camera object to act as the viewport for the player
 heart = instance_create(0,0, HeartBeat);
+heart.xbegin = 12;
+heart.xend = 16;
+hp = 100;
 
     /** -- Any variable description preceded by @ is 
         modifiable for the purpose of changing game feel -- **/
@@ -26,7 +29,6 @@ vel.yacl = 2.1;     // @gravity
 motion.decay = 0.8;
 
 Force_Attach(vel, motion);
-
 
 stand = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting
   stand.main = Player_Stand;                        // link Player_Stand as script for step event

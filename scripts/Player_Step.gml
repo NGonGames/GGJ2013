@@ -11,10 +11,28 @@ if(place_meeting(x + sign(vel.xmax), y, DamageHitbox) && state != recoil) {
             i.force.x = -20;
         }
         Force_Attach(i.force, motion);
+        if (i.damage) {
+            hp -= i.damage;
+        }
     }
+}
+
+if (hp < 100) {
+    hp += .1;
 }
 
 if (place_meeting(x, y, DamageHitbox)) {
     vel.x = 0;
     vel.y = 0;
+}
+
+if (Input_Pressed(Input.menu)) {
+    instance_create(0, 0, PauseMenu);
+}
+
+if (place_meeting(x, y, Key)) {
+    with (instance_place(x, y, Key)) {
+        instance_destroy();
+        GameData.num_keys += 1;
+    }
 }
