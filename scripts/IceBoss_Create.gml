@@ -10,11 +10,11 @@ Force_Attach(vel, motion);
 
 
 patrol = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting
-  patrol.main = MediumGround_Patrol;
-  patrol.onEnter = MediumGround_Patrol_OnEnter;                        // link Player_Stand as script for step event
+  patrol.main = IceBoss_Patrol;
+  patrol.onEnter = IceBoss_Patrol_OnEnter;                        // link Player_Stand as script for step event
   patrol.sprite = instance_create(0, 0, Animation);  // create animation object to represent idling
-    patrol.sprite.left = mground_l_patrol_sprite;               // left facing idle sprite ID
-    patrol.sprite.right = mground_r_patrol_sprite;              // right facing idle sprite ID
+    patrol.sprite.left = iboss_walk_l_sprite;               // left facing idle sprite ID
+    patrol.sprite.right = iboss_walk_l_sprite;              // right facing idle sprite ID
   Animation_Refresh(patrol.sprite);                  // set the rest of the idle animation vairables automatically
   patrol.startx = x;
   patrol.distance = 200;
