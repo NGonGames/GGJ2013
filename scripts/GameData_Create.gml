@@ -22,3 +22,7 @@ item[4] = 1;
 item[5] = 1;
 
 weapon = 0;
+
+for (var i = 0; i < 16; ++i) {
+    key[i] = 0;
+}
