@@ -290,7 +290,7 @@
           <script>scripts\IceBoss_Special.gml</script>
           <script>scripts\IceBoss_Special_OnEnter.gml</script>
         </scripts>
-      </scripts>      
+      </scripts>
     </scripts>
     <scripts name="DamageHitbox">
       <script>scripts\DamageHitbox_Create.gml</script>
