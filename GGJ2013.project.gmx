@@ -112,7 +112,11 @@
     <background>background\mountain</background>
     <background>background\icewalk_bg</background>
     <background>background\icewalk2_bg</background>
-    <background>background\background12</background>
+    <background>background\ice_cave</background>
+    <background>background\dirt_bg</background>
+    <background>background\ice_ground_bg</background>
+    <background>background\ice_ground_left_bg</background>
+    <background>background\ice_ground_right_bg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
