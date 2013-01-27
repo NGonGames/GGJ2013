@@ -102,6 +102,8 @@
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
       <sprite>sprites\movingplat_sprite</sprite>
+      <sprite>sprites\gate_sprite</sprite>
+      <sprite>sprites\key_sprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -474,6 +476,7 @@
       <object>objects\FireBossBullet</object>
     </objects>
     <object>objects\Key</object>
+    <object>objects\Gate</object>
     <object>objects\Weapon</object>
     <object>objects\NPC</object>
     <object>objects\Dialog</object>

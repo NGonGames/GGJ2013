@@ -26,3 +26,6 @@ weapon = 0;
 for (var i = 0; i < 16; ++i) {
     key[i] = 0;
 }
+for (var i = 0; i < 16; ++i) {
+    gate[i] = 0;
+}
