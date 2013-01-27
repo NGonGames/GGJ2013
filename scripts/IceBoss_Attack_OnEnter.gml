@@ -10,7 +10,7 @@ with (instance_create(x, y, DamageHitbox)) {
     other.damageHitbox = id;
 }
 
-with (instance_create(x, y, MediumGroundBullet)) {
+with (instance_create(x, y, IceBossBullet)) {
     vel.x = sign(Player.x - other.x) * 10;
     image_xscale = sign(vel.x);
 }
