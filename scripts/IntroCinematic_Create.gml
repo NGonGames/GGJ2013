@@ -1,4 +1,4 @@
-sounds[0] = introcinematic_sound1;
+/*sounds[0] = introcinematic_sound1;
 sounds[1] = introcinematic_sound2;
 sounds[2] = introcinematic_sound3;
 sounds[3] = introcinematic_sound4;

@@ -100,6 +100,7 @@
       <sprite>sprites\bulletgrenade_sprite</sprite>
       <sprite>sprites\grenadeexplosion_sprite</sprite>
       <sprite>sprites\icebossbullet_sprite</sprite>
+      <sprite>sprites\icespecial_sprite</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
