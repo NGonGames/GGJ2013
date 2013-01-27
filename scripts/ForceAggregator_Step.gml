@@ -6,12 +6,12 @@ for (var i = 0; i < ds_list_size(force_list); ++i) {
     else if(tempForce.impulse) {
         tempForce.x = tempForce.x * decay;
         tempForce.y = tempForce.y * decay;
-        /*if(tempForce.x < 0.01 && tempForce.y < 0.01) {
+        if(tempForce.x < 0.001 && tempForce.y < 0.001) {
             ds_list_delete(force_list, i);
             --i;
             with(tempForce) {
                 instance_destroy();
             }
-        }*/
+        }
     }
 }
