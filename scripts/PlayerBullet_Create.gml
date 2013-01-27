@@ -13,5 +13,5 @@ with (instance_create(x, y, DamageHitbox)) {
 
 vel = instance_create(0,0,Force);
 
-image_xscale = sign(Player.vel.x);
+image_xscale = sign(Player.vel.xmax);
 Force_Attach(vel, motion);

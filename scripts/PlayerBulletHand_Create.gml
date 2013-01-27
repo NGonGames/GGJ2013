@@ -1,2 +1,2 @@
 event_inherited();
-vel.x = sign(Player.vel.x) * 20;
+vel.x = sign(Player.vel.xmax) * 20;
