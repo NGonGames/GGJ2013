@@ -50,7 +50,6 @@
         <sprite>sprites\mground_r_patrol_sprite</sprite>
         <sprite>sprites\mground_l_attack_sprite</sprite>
         <sprite>sprites\mground_r_attack_sprite</sprite>
-        <sprite>sprites\mgroundmask_sprite</sprite>
       </sprites>
       <sprites name="Air">
         <sprite>sprites\air_l_patrol_sprite</sprite>
@@ -77,7 +76,10 @@
     </sprites>
     <sprite>sprites\key_sprite</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\cave_bg</background>
+    <background>background\city_bg</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player">
@@ -307,7 +309,14 @@
     <room>rooms\menu_rm</room>
     <room>rooms\credits_rm</room>
     <room>rooms\test0</room>
+    <room>rooms\worm_rm</room>
+    <room>rooms\dark_forest_rm</room>
+    <room>rooms\start_rm</room>
+    <room>rooms\lostinn_rm</room>
     <room>rooms\test1</room>
+    <room>rooms\merch_rm</room>
+    <room>rooms\thepit_rm</room>
+    <room>rooms\temple_of_the_golden_god_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
