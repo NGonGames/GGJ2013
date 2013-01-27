@@ -5,6 +5,7 @@ vel = instance_create(0, 0, Force);
 vel.x = 5;
 vel.yacl = 2.1;
 motion.decay = 0.5;
+motion.owner = id;
 damageHitbox = -1;
 Force_Attach(vel, motion);
 

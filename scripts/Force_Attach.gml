@@ -10,5 +10,6 @@ with (argument[1]) {
         tmpF.impulse = true;
         f = tmpF;
     }
+    f.agg = id;
     ds_list_add(force_list, f);
 }
