@@ -3,7 +3,25 @@ switch (GameData.weapon) {
     case 1: instance_create(x, y, PlayerBulletAxe); break;
     case 2: instance_create(x, y, PlayerBulletGrenade); break;
     case 3: instance_create(x, y, PlayerBulletIce); break;
-    case 4: instance_create(x, y, PlayerBulletFire); break;
+    case 4:
+        for(var i = 0; i<3; i++) {
+            with(instance_create(x, y, PlayerBulletFire)) {
+                switch(i) {
+                    case 0:
+                        image_angle = sign(vel.x) * 20;
+                        vel.y = -2; 
+                        break;
+                    case 1:
+                        image_angle = 0; 
+                        break;
+                    case 2:
+                        image_angle = sign(vel.x) * -20;
+                        vel.y = 2; 
+                        break;
+                }
+            }   
+        }             
+      break;
     case 5: instance_create(x, y, PlayerBulletSin); break;
 }
 

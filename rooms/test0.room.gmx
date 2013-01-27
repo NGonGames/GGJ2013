@@ -61,6 +61,7 @@
     <instance objName="MediumGround" x="640" y="864" name="inst_610AFEAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="NPC" x="688" y="416" name="inst_A19FF82D" locked="0" code="msg = &quot;Scott is sooooooooooo gay.&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MovingPlatform" x="624" y="368" name="inst_BA12F960" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="LargeGround" x="528" y="384" name="inst_08509965" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
