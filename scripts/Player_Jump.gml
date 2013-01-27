@@ -28,7 +28,8 @@ Move_Y(motion);
 if (vel.y >= 0) {
     State_Change(fall);
 }
-if (Input_Pressed(Input.jump) && jump.control && jump.number < jump.limit) { State_Change(jump); jump.control = true; exit; }
+
+if (Input_Pressed(Input.jump) && jump.number < jump.limit) { State_Change(jump); jump.control = true; exit; }
 if (Input_Pressed(Input.attack)) { State_Change(attack); exit; }
 
 if (jump.control) {

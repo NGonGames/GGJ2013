@@ -17,7 +17,9 @@ patrol = instance_create(0, 0, StateTemplate);       // represents normal, stati
     patrol.sprite.right = iboss_walk_r_sprite;              // right facing idle sprite ID
   Animation_Refresh(patrol.sprite);                  // set the rest of the idle animation vairables automatically
   patrol.startx = x;
-  patrol.distance = 200;
+  patrol.distance = 450;
+  patrol.time = 0;
+  patrol.timer = 240;
 
   
 attack = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting

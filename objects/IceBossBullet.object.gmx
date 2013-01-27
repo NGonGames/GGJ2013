@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// MediumGrounBullet_Create();
-MediumGroundBullet_Create();
+            <string>IceBossBullet_Create();
 </string>
           </argument>
         </arguments>
@@ -49,8 +48,7 @@ MediumGroundBullet_Create();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// MediumGroundBullet_Step();
-MediumGroundBullet_Step();
+            <string>IceBossBullet_Step();
 </string>
           </argument>
         </arguments>
