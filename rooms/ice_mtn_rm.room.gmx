@@ -61,11 +61,10 @@
     <instance objName="Door" x="3552" y="1120" name="inst_ACDADEA5" locked="0" code="rm = dark_forest_rm;&#xA;rx = 4350;&#xA;ry = 590;&#xA;auto = true;" scaleX="7" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="1408" y="1472" name="inst_05F1C293" locked="0" code="" scaleX="25" scaleY="8.25806045532227" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="3680" y="384" name="inst_62858313" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Solid" x="3424" y="1216" name="inst_9785837B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="1458" y="1394" name="inst_46D30777" locked="0" code="" scaleX="80.4375" scaleY="5.61290311813354" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="background12" x="3136" y="384" w="979" h="988" xo="0" yo="0" id="10005708" name="inst_82B425EB" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ice_cave" x="3136" y="384" w="979" h="988" xo="0" yo="0" id="10005708" name="inst_82B425EB" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="city_bg" x="1248" y="1952" w="32" h="32" xo="128" yo="160" id="10005709" name="inst_402228E3" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="city_bg" x="1248" y="1920" w="32" h="32" xo="128" yo="160" id="10005710" name="inst_184B3ECA" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="city_bg" x="1312" y="1920" w="32" h="32" xo="128" yo="192" id="10005711" name="inst_F8AAA281" depth="-100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
