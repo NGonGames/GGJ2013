@@ -86,6 +86,7 @@
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
+      <sprite>sprites\movingplat_sprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -329,6 +330,10 @@
       <script>scripts\Dialog_Step.gml</script>
       <script>scripts\Dialog_Draw.gml</script>
     </scripts>
+    <scripts name="Moving Platform">
+      <script>scripts\MovingPlatform_Create.gml</script>
+      <script>scripts\MovingPlatform_Step.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -385,6 +390,7 @@
     <object>objects\Weapon</object>
     <object>objects\NPC</object>
     <object>objects\Dialog</object>
+    <object>objects\MovingPlatform</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\setup</room>
