@@ -291,6 +291,21 @@
           <script>scripts\IceBoss_Special_OnEnter.gml</script>
         </scripts>
       </scripts>
+      <scripts name="FireBoss">
+        <script>scripts\FireBoss_Create.gml</script>
+        <script>scripts\FireBoss_Step.gml</script>
+        <scripts name="Patrol">
+          <script>scripts\FireBoss_Patrol.gml</script>
+        </scripts>
+        <scripts name="Attack">
+          <script>scripts\FireBoss_Attack.gml</script>
+          <script>scripts\FireBoss_Attack_OnEnter.gml</script>
+        </scripts>
+        <scripts name="Special">
+          <script>scripts\FireBoss_Special.gml</script>
+          <script>scripts\FireBoss_Special_OnExit.gml</script>
+        </scripts>
+      </scripts>
     </scripts>
     <scripts name="DamageHitbox">
       <script>scripts\DamageHitbox_Create.gml</script>
@@ -377,6 +392,14 @@
       <script>scripts\MovingPlatform_Create.gml</script>
       <script>scripts\MovingPlatform_Step.gml</script>
     </scripts>
+    <scripts name="BossSpecials">
+      <scripts name="Fire">
+        <script>scripts\FireSpecial_Create.gml</script>
+      </scripts>
+      <scripts name="Ice">
+        <script>scripts\IceSpecial_Create.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -452,6 +475,7 @@
     <room>rooms\merch_rm</room>
     <room>rooms\thepit_rm</room>
     <room>rooms\temple_of_the_golden_god_rm</room>
+    <room>rooms\room14</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
