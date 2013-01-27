@@ -23,5 +23,4 @@ sprite.left = air_l_attack_sprite;
 sprite.right = air_r_attack_sprite;
 Animation_Refresh(sprite);
 
-
 Force_Attach(vel, motion);

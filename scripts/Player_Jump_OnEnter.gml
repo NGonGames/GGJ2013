@@ -1,1 +1,1 @@
-heart.heartCur += 10;
+

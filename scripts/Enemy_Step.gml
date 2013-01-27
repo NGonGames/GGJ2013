@@ -4,13 +4,14 @@ if(place_meeting(x,y,DamageHitbox)) {
     show_debug_message("collision with bullet");
     if(i.type == "player") {
         //destroy player bullet and reduce hp
+        
+        hp -= i.damage;
         with(i) {
             with(i.owner) {
                 instance_destroy();   
             }            
             instance_destroy();
         }
-        hp -= i.damaage;
     }
 }
 

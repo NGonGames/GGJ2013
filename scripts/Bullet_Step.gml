@@ -1,5 +1,6 @@
 if(motion != -1 ) {
-    Move_X(motion);
+    show_debug_message(string(vel.x));
+    Move_X(motion, 0);
     Move_Y(motion);
 }
 //if  bullet does not colides with view screen

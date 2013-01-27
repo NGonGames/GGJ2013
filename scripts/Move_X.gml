@@ -29,7 +29,13 @@ switch (mode) {
             } else if (!place_meeting(x + xs, y, Solid)) {  // there's not a slope below to stick to, so just go forward?
                 if (!mode || place_meeting(x + xs, y + 1, Solid)) { // only if you're not groundlocked or there is ground beneath you anyway
                     x += xs;    // move forward
+                    if (object_index == PlayerBullet) {
+                        show_debug_message("asdasdf");
+                    }
                 } else {
+                    if (object_index == PlayerBullet) {
+                        show_debug_message("groundlocked bullet movex");
+                    }
                     force_x = 0;   // you've been groundlocked, exit the loop
                 }
             } else if (!place_meeting(x + xs, y - 1, Solid)) {  // you couldn't move forward, can you go uphill?
