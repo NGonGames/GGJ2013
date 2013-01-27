@@ -117,6 +117,7 @@
     <background>background\ice_ground_bg</background>
     <background>background\ice_ground_left_bg</background>
     <background>background\ice_ground_right_bg</background>
+    <background>background\background16</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
