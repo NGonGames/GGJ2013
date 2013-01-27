@@ -83,6 +83,7 @@ dash = instance_create(0, 0, StateTemplate);        // Represents dashing motion
 
 attack = instance_create(0, 0, StateTemplate);      // Represents attacking action
   attack.main = Player_Attack;
+  attack.onEnter = Player_Attack_OnEnter;
   attack.sprite = instance_create(0, 0, Animation);
     attack.sprite.left = player_l_attack_sprite;
     attack.sprite.right = player_r_attack_sprite;

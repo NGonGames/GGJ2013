@@ -1,3 +1,4 @@
+event_inherited();
 motion = instance_create(0, 0, ForceAggregator);
 vel = instance_create(0, 0, Force);
 

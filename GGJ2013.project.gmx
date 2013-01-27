@@ -97,6 +97,7 @@
         </scripts>
         <scripts name="Attack">
           <script>scripts\Player_Attack.gml</script>
+          <script>scripts\Player_Attack_OnEnter.gml</script>
         </scripts>
         <scripts name="Fall">
           <script>scripts\Player_Fall.gml</script>
@@ -228,10 +229,14 @@
         </scripts>
       </scripts>
       <script>scripts\Enemy_Draw.gml</script>
+      <script>scripts\Enemy_Step.gml</script>
+      <script>scripts\Enemy_Create.gml</script>
+      <script>scripts\Enemy_Destroy.gml</script>
     </scripts>
     <scripts name="DamageHitbox">
       <script>scripts\DamageHitbox_Create.gml</script>
       <script>scripts\DamageHitbox_Step.gml</script>
+      <script>scripts\DamageHitbox_Destroy.gml</script>
     </scripts>
     <scripts name="Gate">
       <script>scripts\Gate_Create.gml</script>
@@ -250,6 +255,16 @@
       <script>scripts\HeartBeat_Create.gml</script>
       <script>scripts\HeartBeat_Step.gml</script>
       <script>scripts\HeartBeat_Draw.gml</script>
+    </scripts>
+    <scripts name="Bullet">
+      <script>scripts\Bullet_Create.gml</script>
+      <script>scripts\Bullet_Step.gml</script>
+      <script>scripts\Bullet_Destroy.gml</script>
+      <script>scripts\Bullet_Draw.gml</script>
+    </scripts>
+    <scripts name="PlayerBullet">
+      <script>scripts\PlayerBullet_Create.gml</script>
+      <script>scripts\PlayerBullet_Step.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -271,6 +286,7 @@
       <object>objects\Force</object>
       <object>objects\DamageHitbox</object>
       <object>objects\StateObject</object>
+      <object>objects\Bullet</object>
     </objects>
     <objects name="Menu">
       <object>objects\PlayButton</object>
@@ -286,6 +302,9 @@
       <object>objects\MediumGround</object>
       <object>objects\AirSpike</object>
       <object>objects\LargeGround</object>
+    </objects>
+    <objects name="Bullets">
+      <object>objects\PlayerBullet</object>
     </objects>
   </objects>
   <rooms name="rooms">

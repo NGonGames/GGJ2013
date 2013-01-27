@@ -6,9 +6,6 @@ Move_X(motion, true);
 
 if(state.age >= state.sprite.length * 3) {
     with (damageHitbox) {
-        with (force) {
-            instance_destroy();
-        }
         instance_destroy();
     }
     State_Change(patrol);
