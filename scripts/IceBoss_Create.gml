@@ -19,7 +19,7 @@ patrol = instance_create(0, 0, StateTemplate);       // represents normal, stati
   patrol.startx = x;
   patrol.distance = 450;
   patrol.time = 0;
-  patrol.timer = 240;
+  patrol.timer = 50;
 
   
 attack = instance_create(0, 0, StateTemplate);       // represents normal, stationary resting
@@ -33,6 +33,7 @@ attack = instance_create(0, 0, StateTemplate);       // represents normal, stati
   
 special = instance_create(0, 0, StateTemplate);
   special.main = IceBoss_Special;
+  special.onExit = IceBoss_Special_OnExit;
   special.sprite = instance_create(0, 0, Animation);
     special.sprite.left = iboss_power_l_sprite;
     special.sprite.right = iboss_power_r_sprite;

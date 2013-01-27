@@ -1,5 +1,1 @@
-if (motion) {
-    with (motion) {
-        instance_destroy();
-    }
-}
+event_inherited();

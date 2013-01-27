@@ -4,5 +4,5 @@ if(state.age >= state.sprite.length) {
         instance_destroy();
     }
     State_Change(patrol);
-    attack.cooldown = 30;
+    attack.cooldown = 90;
 }

@@ -297,7 +297,7 @@
         </scripts>
         <scripts name="Special">
           <script>scripts\IceBoss_Special.gml</script>
-          <script>scripts\IceBoss_Special_OnEnter.gml</script>
+          <script>scripts\IceBoss_Special_OnExit.gml</script>
         </scripts>
         <scripts name="Bullet">
           <script>scripts\IceBossBullet_Create.gml</script>
@@ -415,6 +415,7 @@
       </scripts>
       <scripts name="Ice">
         <script>scripts\IceSpecial_Create.gml</script>
+        <script>scripts\IceSpecial_Step.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -472,6 +473,7 @@
       <object>objects\GrenadeExplosion</object>
       <object>objects\IceBossBullet</object>
       <object>objects\FireBossBullet</object>
+      <object>objects\IceSpecial</object>
     </objects>
     <object>objects\Key</object>
     <object>objects\Weapon</object>
