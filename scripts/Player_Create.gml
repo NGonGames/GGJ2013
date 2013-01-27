@@ -11,6 +11,8 @@ heart.xbegin = 12;
 heart.xend = 16;
 heart.as_low = .8;
 heart.as_high = 2;
+heart.hpr_low =.2;
+heart.hpr_high =.1;
 hp = 100;
 
     /** -- Any variable description preceded by @ is 

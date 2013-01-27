@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\introcinematic_sound1</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\solidmask_sprite</sprite>
     <sprite>sprites\semisolid_sprite</sprite>
@@ -102,6 +104,12 @@
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
       <sprite>sprites\movingplat_sprite</sprite>
+      <sprite>sprites\gate_sprite</sprite>
+      <sprite>sprites\key_sprite</sprite>
+    </sprites>
+    <sprite>sprites\heartrace_sprite</sprite>
+    <sprites name="Cinematic">
+      <sprite>sprites\introcinematic_1_sprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -418,6 +426,11 @@
         <script>scripts\IceSpecial_Step.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Cinematics">
+      <script>scripts\IntroCinematic_Draw.gml</script>
+      <script>scripts\IntroCinematic_Step.gml</script>
+      <script>scripts\IntroCinematic_Create.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -476,11 +489,13 @@
       <object>objects\IceSpecial</object>
     </objects>
     <object>objects\Key</object>
+    <object>objects\Gate</object>
     <object>objects\Weapon</object>
     <object>objects\NPC</object>
     <object>objects\Dialog</object>
     <object>objects\MovingPlatform</object>
     <object>objects\ParallaxBG</object>
+    <object>objects\IntroCinematic</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\setup</room>

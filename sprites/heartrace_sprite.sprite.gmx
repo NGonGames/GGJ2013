@@ -7,14 +7,18 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>47</bbox_right>
+  <bbox_right>1023</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>16</bbox_bottom>
+  <bbox_bottom>511</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroup>0</TextureGroup>
   <For3D>0</For3D>
   <frames>
-    <frame index="0">images\key_sprite_0.png</frame>
+    <frame index="0">images\heartrace_sprite_0.png</frame>
+    <frame index="1">images\heartrace_sprite_1.png</frame>
+    <frame index="2">images\heartrace_sprite_2.png</frame>
+    <frame index="3">images\heartrace_sprite_3.png</frame>
+    <frame index="4">images\heartrace_sprite_4.png</frame>
   </frames>
 </sprite>
