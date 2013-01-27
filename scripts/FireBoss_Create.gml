@@ -35,5 +35,7 @@ special = instance_create(0, 0, StateTemplate);
   special.sprite = instance_create(0, 0, Animation);
     special.sprite.left = iboss_power_l_sprite;
   Animation_Refresh(special.sprite);
-  
+
+dazed.sprite.left = patrol.sprite.left;
+dazed.sprite.right = patrol.sprite.right;
 state = patrol; state_last = patrol; state_next = patrol;

@@ -71,8 +71,11 @@
         <sprite>sprites\iboss_dying_l_sprite</sprite>
         <sprite>sprites\iboss_hit_l_sprite</sprite>
         <sprite>sprites\iboss_power_l_sprite</sprite>
+        <sprite>sprites\iboss_power_r_sprite</sprite>
         <sprite>sprites\iboss_attack_l_sprite</sprite>
+        <sprite>sprites\iboss_attack_r_sprite</sprite>
         <sprite>sprites\iboss_walk_l_sprite</sprite>
+        <sprite>sprites\iboss_walk_r_sprite</sprite>
       </sprites>
     </sprites>
     <sprites name="GUI">
@@ -94,6 +97,7 @@
       <sprite>sprites\bulletice_sprite</sprite>
       <sprite>sprites\bulletgrenade_sprite</sprite>
       <sprite>sprites\grenadeexplosion_sprite</sprite>
+      <sprite>sprites\icebossbullet_sprite</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
@@ -112,7 +116,11 @@
     <background>background\mountain</background>
     <background>background\icewalk_bg</background>
     <background>background\icewalk2_bg</background>
-    <background>background\background12</background>
+    <background>background\ice_cave</background>
+    <background>background\dirt_bg</background>
+    <background>background\ice_ground_bg</background>
+    <background>background\ice_ground_left_bg</background>
+    <background>background\ice_ground_right_bg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -290,6 +298,10 @@
           <script>scripts\IceBoss_Special.gml</script>
           <script>scripts\IceBoss_Special_OnEnter.gml</script>
         </scripts>
+        <scripts name="Bullet">
+          <script>scripts\IceBossBullet_Create.gml</script>
+          <script>scripts\IceBossBullet_Step.gml</script>
+        </scripts>
       </scripts>
       <scripts name="FireBoss">
         <script>scripts\FireBoss_Create.gml</script>
@@ -304,6 +316,9 @@
         <scripts name="Special">
           <script>scripts\FireBoss_Special.gml</script>
           <script>scripts\FireBoss_Special_OnExit.gml</script>
+        </scripts>
+        <scripts name="Bullet">
+          <script>scripts\FireBossBullet_Create.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -453,6 +468,8 @@
       <object>objects\PlayerBulletSin</object>
       <object>objects\PlayerBulletHand</object>
       <object>objects\GrenadeExplosion</object>
+      <object>objects\IceBossBullet</object>
+      <object>objects\FireBossBullet</object>
     </objects>
     <object>objects\Key</object>
     <object>objects\Weapon</object>
@@ -465,6 +482,7 @@
     <room>rooms\menu_rm</room>
     <room>rooms\credits_rm</room>
     <room>rooms\test0</room>
+    <room>rooms\room14</room>
     <room>rooms\worm_rm</room>
     <room>rooms\dark_forest_rm</room>
     <room>rooms\start_rm</room>
@@ -475,7 +493,6 @@
     <room>rooms\merch_rm</room>
     <room>rooms\thepit_rm</room>
     <room>rooms\temple_of_the_golden_god_rm</room>
-    <room>rooms\room14</room>
     <room>rooms\intro_cinematic_rm</room>
   </rooms>
   <help>
