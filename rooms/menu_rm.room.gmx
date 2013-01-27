@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1024</width>
   <height>516</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -52,8 +52,8 @@
   <instances>
     <instance objName="PlayButton" x="384" y="192" name="inst_6C7FBFE6" locked="0" code="" scaleX="0.458647012710571" scaleY="0.458647012710571" colour="4294967295" rotation="0"/>
     <instance objName="MenuObject" x="0" y="0" name="inst_3C1F28F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="MuteButton" x="960" y="0" name="inst_EE55CF3C" locked="0" code="" scaleX="0.914285719394684" scaleY="0.914285719394684" colour="4294967295" rotation="0"/>
-    <instance objName="CreditsButton" x="0" y="384" name="inst_B1DF6A6E" locked="0" code="" scaleX="0.218045115470886" scaleY="0.218045115470886" colour="4294967295" rotation="0"/>
+    <instance objName="MuteButton" x="944" y="0" name="inst_EE55CF3C" locked="0" code="" scaleX="0.914286017417908" scaleY="0.914286017417908" colour="4294967295" rotation="0"/>
+    <instance objName="CreditsButton" x="0" y="384" name="inst_B1DF6A6E" locked="0" code="" scaleX="0.218044996261597" scaleY="0.218044996261597" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
