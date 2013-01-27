@@ -83,7 +83,6 @@
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
-    <sprite>sprites\pausemenu_sprite</sprite>
       <sprite>sprites\weapon_sprite</sprite>
     </sprites>
   </sprites>

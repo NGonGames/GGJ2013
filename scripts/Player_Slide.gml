@@ -16,6 +16,10 @@ if (place_meeting(x, y + 1, Solid)) {
     exit;
 }
 
+if ((!place_meeting(x + sign(vel.x), y, Solid) && !place_meeting(x + sign(vel.x), y, Solid)) || Input_Pressed(Input.down)) {
+    State_Change(fall);
+}
+
 if (Input_Pressed(Input.jump)) {
     State_Change(jump);
     jump.control = false;
