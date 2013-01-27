@@ -53,4 +53,8 @@ for (i = 0; i < key_max; i += 1) {  // creates arrys for input tracking
 
 if (config == config_mobile || config == config_mobile_web) { 
     /// TODO: Add virtual keys
+    virtual_key_add(0, display_get_height() - 128, 128, 128, key[left]);
+    virtual_key_add(128, display_get_height() - 128, 128, 128, key[right]);
+    //virtual_key_add(0, display_get_height() - 128, 128, 128, vk_left);
+    //virtual_key_add(0, display_get_height() - 128, 128, 128, vk_left);
 }

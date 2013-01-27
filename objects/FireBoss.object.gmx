@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>IceBoss_Create();
+            <string>FireBoss_Create();
 </string>
           </argument>
         </arguments>
@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>IceBoss_Step();
+            <string>FireBoss_Step();
 </string>
           </argument>
         </arguments>

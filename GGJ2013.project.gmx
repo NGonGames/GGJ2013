@@ -101,6 +101,7 @@
       <sprite>sprites\grenadeexplosion_sprite</sprite>
       <sprite>sprites\icebossbullet_sprite</sprite>
       <sprite>sprites\icespecial_sprite</sprite>
+      <sprite>sprites\firespecial_sprite</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
@@ -421,6 +422,7 @@
     <scripts name="BossSpecials">
       <scripts name="Fire">
         <script>scripts\FireSpecial_Create.gml</script>
+        <script>scripts\FireSpecial_Step.gml</script>
       </scripts>
       <scripts name="Ice">
         <script>scripts\IceSpecial_Create.gml</script>
@@ -474,6 +476,7 @@
       <object>objects\AirSpike</object>
       <object>objects\LargeGround</object>
       <object>objects\IceBoss</object>
+      <object>objects\FireBoss</object>
     </objects>
     <objects name="Bullets">
       <object>objects\PlayerBullet</object>
@@ -488,6 +491,7 @@
       <object>objects\IceBossBullet</object>
       <object>objects\FireBossBullet</object>
       <object>objects\IceSpecial</object>
+      <object>objects\FireSpecial</object>
     </objects>
     <object>objects\Key</object>
     <object>objects\Gate</object>
