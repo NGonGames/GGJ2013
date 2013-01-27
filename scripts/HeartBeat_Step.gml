@@ -10,3 +10,8 @@
         }
     }
 }*/
+
+heartCur -= 0.025;
+if (heartCur < 0) {
+    heartCur = 0;
+}
