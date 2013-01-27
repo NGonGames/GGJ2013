@@ -71,8 +71,11 @@
         <sprite>sprites\iboss_dying_l_sprite</sprite>
         <sprite>sprites\iboss_hit_l_sprite</sprite>
         <sprite>sprites\iboss_power_l_sprite</sprite>
+        <sprite>sprites\iboss_power_r_sprite</sprite>
         <sprite>sprites\iboss_attack_l_sprite</sprite>
+        <sprite>sprites\iboss_attack_r_sprite</sprite>
         <sprite>sprites\iboss_walk_l_sprite</sprite>
+        <sprite>sprites\iboss_walk_r_sprite</sprite>
       </sprites>
     </sprites>
     <sprites name="GUI">
@@ -94,6 +97,7 @@
       <sprite>sprites\bulletice_sprite</sprite>
       <sprite>sprites\bulletgrenade_sprite</sprite>
       <sprite>sprites\grenadeexplosion_sprite</sprite>
+      <sprite>sprites\icebossbullet_sprite</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
@@ -274,11 +278,6 @@
           <script>scripts\LargeGround_Attack_OnEnter.gml</script>
         </scripts>
       </scripts>
-      <script>scripts\Enemy_Draw.gml</script>
-      <script>scripts\Enemy_Step.gml</script>
-      <script>scripts\Enemy_Create.gml</script>
-      <script>scripts\Enemy_Destroy.gml</script>
-      <script>scripts\Enemy_Dazed.gml</script>
       <scripts name="IceBoss">
         <script>scripts\IceBoss_Create.gml</script>
         <script>scripts\IceBoss_Step.gml</script>
@@ -294,7 +293,16 @@
           <script>scripts\IceBoss_Special.gml</script>
           <script>scripts\IceBoss_Special_OnEnter.gml</script>
         </scripts>
+        <scripts name="Bullet">
+          <script>scripts\IceBossBullet_Create.gml</script>
+          <script>scripts\IceBossBullet_Step.gml</script>
+        </scripts>
       </scripts>
+      <script>scripts\Enemy_Draw.gml</script>
+      <script>scripts\Enemy_Step.gml</script>
+      <script>scripts\Enemy_Create.gml</script>
+      <script>scripts\Enemy_Destroy.gml</script>
+      <script>scripts\Enemy_Dazed.gml</script>
     </scripts>
     <scripts name="DamageHitbox">
       <script>scripts\DamageHitbox_Create.gml</script>
@@ -434,6 +442,7 @@
       <object>objects\PlayerBulletSin</object>
       <object>objects\PlayerBulletHand</object>
       <object>objects\GrenadeExplosion</object>
+      <object>objects\IceBossBullet</object>
     </objects>
     <object>objects\Key</object>
     <object>objects\Weapon</object>
@@ -446,6 +455,7 @@
     <room>rooms\menu_rm</room>
     <room>rooms\credits_rm</room>
     <room>rooms\test0</room>
+    <room>rooms\room14</room>
     <room>rooms\worm_rm</room>
     <room>rooms\dark_forest_rm</room>
     <room>rooms\start_rm</room>
