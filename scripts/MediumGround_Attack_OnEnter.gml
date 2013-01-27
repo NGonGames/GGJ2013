@@ -10,4 +10,8 @@ with (instance_create(x, y, DamageHitbox)) {
     other.damageHitbox = id;
 }
 
+with (instance_create(x, y, MediumGroundBullet)) {
+    vel.x = sign(Player.x - other.x) * 10;
+}
+
 state.sprite.index = 0;

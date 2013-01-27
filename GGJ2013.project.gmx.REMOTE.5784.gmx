@@ -79,9 +79,6 @@
       <sprite>sprites\mgp_r_sprite</sprite>
       <sprite>sprites\mgp_l_sprite</sprite>
     </sprites>
-    <sprite>sprites\bullet0_r_sprite</sprite>
-    <sprite>sprites\pausemenu_sprite</sprite>
-    <sprite>sprites\weapon_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\cave_bg</background>

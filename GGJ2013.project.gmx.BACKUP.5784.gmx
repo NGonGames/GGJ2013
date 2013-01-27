@@ -75,13 +75,16 @@
       <sprite>sprites\health_sprite</sprite>
     </sprites>
     <sprite>sprites\key_sprite</sprite>
+<<<<<<< HEAD
+    <sprite>sprites\bullet0_r_sprite</sprite>
+    <sprite>sprites\pausemenu_sprite</sprite>
+    <sprite>sprites\weapon_sprite</sprite>
+=======
     <sprites name="Bullets">
       <sprite>sprites\mgp_r_sprite</sprite>
       <sprite>sprites\mgp_l_sprite</sprite>
     </sprites>
-    <sprite>sprites\bullet0_r_sprite</sprite>
-    <sprite>sprites\pausemenu_sprite</sprite>
-    <sprite>sprites\weapon_sprite</sprite>
+>>>>>>> 337b7470809dc0abfff11b9f88baaaa47d51f93d
   </sprites>
   <backgrounds name="background">
     <background>background\cave_bg</background>
