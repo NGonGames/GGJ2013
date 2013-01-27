@@ -16,8 +16,21 @@ if (place_meeting(x, y + 1, Solid)) {
     exit;
 }
 
-if ((!place_meeting(x + sign(vel.x), y, Solid) && !place_meeting(x + sign(vel.x), y, Solid)) || Input_Pressed(Input.down)) {
+if (!place_meeting(x - sign(vel.x), y, Solid) && !place_meeting(x + sign(vel.x), y, Solid)) {
     State_Change(fall);
+    exit;
+}
+
+if (Input_Pressed(Input.down)) {
+    State_Change(fall);
+    if (!place_meeting(x - 1, y, Solid)) {
+        x -= 1;
+    } else if (!place_meeting(x + 1, y, Solid)) {
+        x += 1;
+    }
+    vel.x *= -1;
+    vel.xmax *= -1;
+    exit;
 }
 
 if (Input_Pressed(Input.jump)) {

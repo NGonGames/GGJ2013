@@ -65,6 +65,15 @@
         <sprite>sprites\lground_r_patrol_sprite</sprite>
         <sprite>sprites\lgroundmask_sprite</sprite>
       </sprites>
+      <sprites name="IceBoss">
+        <sprite>sprites\iboss_die_l_sprite</sprite>
+        <sprite>sprites\iboss_talk_l_sprite</sprite>
+        <sprite>sprites\iboss_dying_l_sprite</sprite>
+        <sprite>sprites\iboss_hit_l_sprite</sprite>
+        <sprite>sprites\iboss_power_l_sprite</sprite>
+        <sprite>sprites\iboss_attack_l_sprite</sprite>
+        <sprite>sprites\iboss_walk_l_sprite</sprite>
+      </sprites>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\hb1_sprite</sprite>
@@ -266,6 +275,22 @@
       <script>scripts\Enemy_Create.gml</script>
       <script>scripts\Enemy_Destroy.gml</script>
       <script>scripts\Enemy_Dazed.gml</script>
+      <scripts name="IceBoss">
+        <script>scripts\IceBoss_Create.gml</script>
+        <script>scripts\IceBoss_Step.gml</script>
+        <scripts name="Patrol">
+          <script>scripts\IceBoss_Patrol.gml</script>
+          <script>scripts\IceBoss_Patrol_OnEnter.gml</script>
+        </scripts>
+        <scripts name="Attack">
+          <script>scripts\IceBoss_Attack.gml</script>
+          <script>scripts\IceBoss_Attack_OnEnter.gml</script>
+        </scripts>
+        <scripts name="Special">
+          <script>scripts\IceBoss_Special.gml</script>
+          <script>scripts\IceBoss_Special_OnEnter.gml</script>
+        </scripts>
+      </scripts>      
     </scripts>
     <scripts name="DamageHitbox">
       <script>scripts\DamageHitbox_Create.gml</script>
@@ -393,6 +418,7 @@
       <object>objects\MediumGround</object>
       <object>objects\AirSpike</object>
       <object>objects\LargeGround</object>
+      <object>objects\IceBoss</object>
     </objects>
     <objects name="Bullets">
       <object>objects\PlayerBullet</object>
