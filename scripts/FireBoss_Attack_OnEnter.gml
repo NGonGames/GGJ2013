@@ -13,22 +13,24 @@ with (instance_create(x, y, DamageHitbox)) {
 for(var i = 0; i<5; i++) {
     var angle = 0;
     var yspeed = 0;
-    case 0:
-        angle = 30;
-        yspeed = -3;
-        break;
-    case 1:
-        angle = 15;
-        yspeed = -1.5;
-        break;
-    case 3:
-        angle = -15;
-        yspeed = 1.5;
-        break;
-    case 4:
-        angle = 30;
-        yspeed = 3;
-        break;        
+    switch(i) {
+        case 0:
+            angle = 30;
+            yspeed = -3;
+            break;
+        case 1:
+            angle = 15;
+            yspeed = -1.5;
+            break;
+        case 3:
+            angle = -15;
+            yspeed = 1.5;
+            break;
+        case 4:
+            angle = 30;
+            yspeed = 3;
+            break;
+    }        
     with (instance_create(x, y, FireBossBullet)) {
         vel.x = sign(Player.x - other.x) * 10;
         image_xscale = sign(vel.x);
