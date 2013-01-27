@@ -12,7 +12,7 @@ vel.y += vel.yacl;
 Move_X(motion, 1);
 Move_Y(motion);
 
-if (abs(Player.x - x) < 384 && abs(Player.y - y) < 256 && attack.cooldown == 0) {
+if (abs(Player.x - x) < 300 && abs(Player.y - y) < 256 && attack.cooldown == 0) {
     State_Change(attack);
     vel.x = abs(vel.x) * sign(Player.x - x);
 }

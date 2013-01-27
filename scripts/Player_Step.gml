@@ -1,5 +1,7 @@
 var diff = heart.xend - heart.xbegin;
 vel.xcap = heart.xbegin + diff * (heart.heartCur / heart.heartMax);
+diff = heart.hpr_high - heart.hpr_low;
+var hpr = heart.hpr_low + diff * (1 - heart.heartCur / heart.heartMax);
 
 event_inherited();
 if(place_meeting(x, y, DamageHitbox) && state != recoil) {

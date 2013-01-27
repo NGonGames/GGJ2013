@@ -9,3 +9,9 @@ if(vel != -1) {
         instance_destroy();
     }    
 }
+
+if (motion != -1) {
+    with (motion) {
+        instance_destroy();
+    }
+}
