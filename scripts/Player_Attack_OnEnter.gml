@@ -1,4 +1,4 @@
-instance_create(x,y,PlayerBullet);
+instance_create(x,y,PlayerBulletHand);
 
 var diff = heart.as_high - heart.as_low;
 

@@ -78,9 +78,11 @@
       <sprite>sprites\weapon_sprite</sprite>
     </sprites>
     <sprites name="Bullets">
-      <sprite>sprites\mgp_r_sprite</sprite>
-      <sprite>sprites\mgp_l_sprite</sprite>
-      <sprite>sprites\bullet0_r_sprite</sprite>
+      <sprite>sprites\mgp_sprite</sprite>
+      <sprite>sprites\bullethand_sprite</sprite>
+      <sprite>sprites\bulletfire_sprite</sprite>
+      <sprite>sprites\bulletaxe_sprite</sprite>
+      <sprite>sprites\bulletice_sprite</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
@@ -303,6 +305,10 @@
         <script>scripts\PlayerBulletSin_Create.gml</script>
         <script>scripts\PlayerBulletSin_Step.gml</script>
       </scripts>
+      <scripts name="PlayerBulletHand">
+        <script>scripts\PlayerBulletHand_Create.gml</script>
+        <script>scripts\PlayerBulletHand_Step.gml</script>
+      </scripts>
     </scripts>
     <scripts name="PauseMenu">
       <script>scripts\PauseMenu_Create.gml</script>
@@ -373,6 +379,7 @@
       <object>objects\PlayerBulletIce</object>
       <object>objects\PlayerBulletFire</object>
       <object>objects\PlayerBulletSin</object>
+      <object>objects\PlayerBulletHand</object>
     </objects>
     <object>objects\Key</object>
     <object>objects\Weapon</object>

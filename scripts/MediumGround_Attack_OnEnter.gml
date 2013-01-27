@@ -12,6 +12,7 @@ with (instance_create(x, y, DamageHitbox)) {
 
 with (instance_create(x, y, MediumGroundBullet)) {
     vel.x = sign(Player.x - other.x) * 10;
+    image_xscale = sign(vel.x);
 }
 
 state.sprite.index = 0;
