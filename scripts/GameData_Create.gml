@@ -6,6 +6,7 @@ global.player_start_y = noone;
 
 num_keys = 0;
 level = 1;
+
 item[0] = true;
 item[1] = false;
 item[2] = false;
@@ -14,9 +15,9 @@ item[4] = false;
 item[5] = false;
 
 item[0] = 1;
-item[1] = 0;
+item[1] = 1;
 item[2] = 1;
-item[3] = 0;
+item[3] = 1;
 item[4] = 1;
 item[5] = 1;
 

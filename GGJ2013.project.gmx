@@ -83,6 +83,7 @@
       <sprite>sprites\bulletfire_sprite</sprite>
       <sprite>sprites\bulletaxe_sprite</sprite>
       <sprite>sprites\bulletice_sprite</sprite>
+      <sprite>sprites\bulletgrenade_sprite</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
