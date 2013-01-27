@@ -65,6 +65,15 @@
         <sprite>sprites\lground_r_patrol_sprite</sprite>
         <sprite>sprites\lgroundmask_sprite</sprite>
       </sprites>
+      <sprites name="IceBoss">
+        <sprite>sprites\iboss_die_l_sprite</sprite>
+        <sprite>sprites\iboss_talk_l_sprite</sprite>
+        <sprite>sprites\iboss_dying_l_sprite</sprite>
+        <sprite>sprites\iboss_hit_l_sprite</sprite>
+        <sprite>sprites\iboss_power_l_sprite</sprite>
+        <sprite>sprites\iboss_attack_l_sprite</sprite>
+        <sprite>sprites\iboss_walk_l_sprite</sprite>
+      </sprites>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\hb1_sprite</sprite>
