@@ -58,12 +58,8 @@
     <instance objName="Solid" x="1472" y="1408" name="inst_46D30777" locked="0" code="" scaleX="140" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="0" y="0" name="inst_2E0EEC21" locked="0" code="" scaleX="1" scaleY="61" colour="4294967295" rotation="0"/>
     <instance objName="Player" x="64" y="1632" name="inst_E51A3588" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Door" x="384" y="1408" name="inst_414EE354" locked="0" code="rm = dark_forest_rm;&#xA;rx = 4350;&#xA;ry = 590;&#xA;auto = true;" scaleX="2" scaleY="9" colour="4294967295" rotation="0"/>
-    <instance objName="Door" x="5472" y="1088" name="inst_ACDADEA5" locked="0" code="rm = ice_king_lair_rm;&#xA;rx = 3296;&#xA;ry = 864;&#xA;auto = true;" scaleX="7" scaleY="9" colour="4294967295" rotation="0"/>
-    <instance objName="AirSpike" x="1600" y="1248" name="inst_2C34B909" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="MediumGround" x="2688" y="1312" name="inst_9A02FC7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="LargeGround" x="3936" y="1312" name="inst_D0BE8770" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="LargeGround" x="4928" y="1312" name="inst_2D84F046" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Door" x="384" y="1408" name="inst_414EE354" locked="0" code="rm = dark_forest_rm;&#xA;rx = 4350;&#xA;ry = 590;&#xA;auto = true;&#xA;visable = false;" scaleX="2" scaleY="9" colour="4294967295" rotation="0"/>
+    <instance objName="Door" x="5472" y="1088" name="inst_ACDADEA5" locked="0" code="rm = ice_king_lair_rm;&#xA;rx = 3296;&#xA;ry = 864;&#xA;auto = true;&#xA;visable = false;" scaleX="7" scaleY="9" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="ice_cave" x="5060" y="440" w="979" h="988" xo="0" yo="0" id="10005725" name="inst_82B425EB" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

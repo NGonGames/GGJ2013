@@ -54,7 +54,7 @@
     <instance objName="Solid" x="0" y="0" name="inst_C00FAC18" locked="0" code="" scaleX="2.5" scaleY="32" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="1984" y="0" name="inst_648C302A" locked="0" code="" scaleX="-4" scaleY="30.5" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="32" y="0" name="inst_E959307E" locked="0" code="" scaleX="60.5" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Player" x="224" y="768" name="inst_E51A3588" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player" x="1792" y="736" name="inst_E51A3588" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Door" x="1824" y="800" name="inst_47DD04A5" locked="0" code="rm = test0;&#xA;rx = 300;&#xA;ry = 300;&#xA;auto = true;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="FireBoss" x="1408" y="608" name="inst_1E4871AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
