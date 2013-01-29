@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\introcinematic_sound1</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\solidmask_sprite</sprite>
     <sprite>sprites\semisolid_sprite</sprite>
@@ -98,12 +100,18 @@
       <sprite>sprites\bulletgrenade_sprite</sprite>
       <sprite>sprites\grenadeexplosion_sprite</sprite>
       <sprite>sprites\icebossbullet_sprite</sprite>
+      <sprite>sprites\icespecial_sprite</sprite>
+      <sprite>sprites\firespecial_sprite</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
       <sprite>sprites\movingplat_sprite</sprite>
       <sprite>sprites\gate_sprite</sprite>
       <sprite>sprites\key_sprite</sprite>
+    </sprites>
+    <sprite>sprites\heartrace_sprite</sprite>
+    <sprites name="Cinematic">
+      <sprite>sprites\introcinematic_1_sprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -134,6 +142,7 @@
     <background>background\background25</background>
     <background>background\coal_cave</background>
     <background>background\background23</background>
+    <background>background\background27</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -424,11 +433,17 @@
     <scripts name="BossSpecials">
       <scripts name="Fire">
         <script>scripts\FireSpecial_Create.gml</script>
+        <script>scripts\FireSpecial_Step.gml</script>
       </scripts>
       <scripts name="Ice">
         <script>scripts\IceSpecial_Create.gml</script>
         <script>scripts\IceSpecial_Step.gml</script>
       </scripts>
+    </scripts>
+    <scripts name="Cinematics">
+      <script>scripts\IntroCinematic_Draw.gml</script>
+      <script>scripts\IntroCinematic_Step.gml</script>
+      <script>scripts\IntroCinematic_Create.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -472,6 +487,7 @@
       <object>objects\AirSpike</object>
       <object>objects\LargeGround</object>
       <object>objects\IceBoss</object>
+      <object>objects\FireBoss</object>
     </objects>
     <objects name="Bullets">
       <object>objects\PlayerBullet</object>
@@ -486,6 +502,7 @@
       <object>objects\IceBossBullet</object>
       <object>objects\FireBossBullet</object>
       <object>objects\IceSpecial</object>
+      <object>objects\FireSpecial</object>
     </objects>
     <object>objects\Key</object>
     <object>objects\Gate</object>
@@ -494,6 +511,7 @@
     <object>objects\Dialog</object>
     <object>objects\MovingPlatform</object>
     <object>objects\ParallaxBG</object>
+    <object>objects\IntroCinematic</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\setup</room>
