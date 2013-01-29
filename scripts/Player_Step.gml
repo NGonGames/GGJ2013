@@ -27,6 +27,13 @@ if (hp < 100) {
     hp += .1;
 }
 
+//Dont do physics for things not on screen
+instance_activate_all();
+instance_deactivate_region(view_xview - 500, view_yview - 500, view_wview + 500, view_hview + 500, false, true);
+//activate stuff in at 0,0
+instance_activate_region(-10, -10, 20, 20, true);
+instance_activate_object(Camera);
+
 if (place_meeting(x, y, DamageHitbox)) {
     if(instance_place(x,y, DamageHitbox).type != "player") {
         vel.x = 0;
@@ -44,3 +51,5 @@ if (place_meeting(x, y, Key)) {
         GameData.num_keys += 1;
     }
 }
+
+

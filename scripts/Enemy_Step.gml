@@ -3,7 +3,7 @@ if(place_meeting(x,y,DamageHitbox)) {
     var i = instance_place(x,y,DamageHitbox);
     if(i.type == "player") {
         //add force of hitbox to enemy
-        hp -= i.damage;
+        hp -= i.damage * 2;
         if(i.owner.object_index == PlayerBulletFire)
         {
             Player.heart.heartCur += 1;            

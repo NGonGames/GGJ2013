@@ -1,6 +1,6 @@
 event_inherited();
 motion = instance_create(0,0,ForceAggregator);
-
+motion.owner = id;
 with (instance_create(x, y, DamageHitbox)) {
     owner = other.id;
     type = "player";

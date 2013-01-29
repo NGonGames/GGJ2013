@@ -3,7 +3,13 @@ if(device_mouse_check_button_pressed(0,mb_left)) {
     y = device_mouse_y(0);
     if(collision_point(x,y,PlayButton,false,true)) {
         //room_goto(intro_cinematic_rm);    
-        room_goto (room14);
+        if (!file_exists(working_directory + "/dat1.sav")) {
+            room_goto (room14);
+        } else {
+            with GameData {
+                GameData_Load();
+            }
+        }
     }
     if(collision_point(x,y,MuteButton,false,true)) {
         state = MuteButton.image_index;

@@ -6,6 +6,9 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\introcinematic_sound1</sound>
+    <sound>sound\introcinematic_sound2</sound>
+    <sound>sound\introcinematic_sound3</sound>
+    <sound>sound\introcinematic_sound4</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\solidmask_sprite</sprite>
@@ -16,6 +19,8 @@
       <sprites name="Buttons">
         <sprite>sprites\playbutton_sprite</sprite>
         <sprite>sprites\mutebutton_sprite</sprite>
+        <sprite>sprites\creditsbutton_sprite</sprite>
+        <sprite>sprites\exitbutton_sprite</sprite>
       </sprites>
       <sprite>sprites\credits_sprite</sprite>
     </sprites>
@@ -111,7 +116,15 @@
     </sprites>
     <sprite>sprites\heartrace_sprite</sprite>
     <sprites name="Cinematic">
-      <sprite>sprites\introcinematic_1_sprite</sprite>
+      <sprite>sprites\introcinematic_1f_sprite</sprite>
+      <sprite>sprites\introcinematic_1l_sprite</sprite>
+      <sprite>sprites\introcinematic_2f_sprite</sprite>
+      <sprite>sprites\introcinematic_2l_sprite</sprite>
+      <sprite>sprites\introcinematic_3f_sprite</sprite>
+      <sprite>sprites\introcinematic_3l_sprite</sprite>
+      <sprite>sprites\introcinematic_4f_sprite</sprite>
+      <sprite>sprites\introcinematic_4l_sprite</sprite>
+      <sprite>sprites\introcinematic_4e_sprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -142,7 +155,7 @@
     <background>background\background25</background>
     <background>background\coal_cave</background>
     <background>background\background23</background>
-    <background>background\background27</background>
+    <background>background\start_screen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -223,6 +236,8 @@
       <scripts name="Data">
         <script>scripts\GameData_Create.gml</script>
         <script>scripts\GameData_Step.gml</script>
+        <script>scripts\GameData_Save.gml</script>
+        <script>scripts\GameData_Load.gml</script>
       </scripts>
       <script>scripts\Move_X.gml</script>
       <script>scripts\Move_Y.gml</script>
@@ -449,6 +464,7 @@
   <fonts name="fonts">
     <font>fonts\font0</font>
     <font>fonts\npc_font</font>
+    <font>fonts\intro_font</font>
   </fonts>
   <objects name="objects">
     <object>objects\HeartBeat</object>
@@ -505,8 +521,8 @@
       <object>objects\FireSpecial</object>
     </objects>
     <object>objects\Key</object>
-    <object>objects\Gate</object>
     <object>objects\Weapon</object>
+    <object>objects\Gate</object>
     <object>objects\NPC</object>
     <object>objects\Dialog</object>
     <object>objects\MovingPlatform</object>
