@@ -4,7 +4,7 @@ if(device_mouse_check_button_pressed(0,mb_left)) {
     if(collision_point(x,y,PlayButton,false,true)) {
         //room_goto(intro_cinematic_rm);    
         if (!file_exists(working_directory + "/dat1.sav")) {
-            room_goto (room14);
+            room_goto (intro_cinematic_rm);
         } else {
             with GameData {
                 GameData_Load();

@@ -59,10 +59,13 @@
     <instance objName="Solid" x="416" y="896" name="inst_80B4C0DA" locked="0" code="" scaleX="17" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="32" y="736" name="inst_94E3344F" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="428" y="832" name="inst_52D9646E" locked="0" code="" scaleX="12" scaleY="4.12903213500977" colour="4294967295" rotation="350"/>
+    <instance objName="Door" x="864" y="736" name="inst_5EE6F270" locked="0" code="rm = lostinn_rm;&#xA;rx = 1088;&#xA;ry = 3616;&#xA;auto = false;" scaleX="3.09677004814148" scaleY="5.16129016876221" colour="4294967295" rotation="0"/>
     <instance objName="Player" x="928" y="608" name="inst_18AA2E41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Door" x="864" y="736" name="inst_5EE6F270" locked="0" code="rm = start_rm;&#xA;rx = 96;&#xA;ry = 2336;&#xA;auto = false;" scaleX="3.09677004814148" scaleY="5.16129016876221" colour="4294967295" rotation="0"/>
+    <instance objName="Weapon" x="64" y="576" name="inst_AECCC495" locked="0" code="w_id= 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="background32" x="64" y="448" w="191" h="77" xo="0" yo="0" id="10019327" name="inst_46556B15" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

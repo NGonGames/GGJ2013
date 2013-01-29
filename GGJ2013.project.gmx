@@ -156,6 +156,10 @@
     <background>background\coal_cave</background>
     <background>background\background23</background>
     <background>background\start_screen</background>
+    <background>background\tut_bg</background>
+    <background>background\z_bg</background>
+    <background>background\down_bg</background>
+    <background>background\background32</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -534,7 +538,8 @@
     <room>rooms\menu_rm</room>
     <room>rooms\credits_rm</room>
     <room>rooms\test0</room>
-    <room>rooms\room14</room>
+    <room>rooms\fire_king_rm</room>
+    <room>rooms\ice_king_rm</room>
     <room>rooms\worm_rm</room>
     <room>rooms\dark_forest_rm</room>
     <room>rooms\start_rm</room>
