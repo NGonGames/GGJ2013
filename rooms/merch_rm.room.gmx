@@ -64,7 +64,7 @@
     <instance objName="Weapon" x="64" y="576" name="inst_AECCC495" locked="0" code="w_id= 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="background32" x="64" y="448" w="191" h="77" xo="0" yo="0" id="10019327" name="inst_46556B15" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background32" x="64" y="448" w="191" h="77" xo="0" yo="0" id="10018949" name="inst_46556B15" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

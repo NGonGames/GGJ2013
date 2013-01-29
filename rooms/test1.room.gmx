@@ -56,8 +56,8 @@
     <instance objName="Solid" x="32" y="0" name="inst_E959307E" locked="0" code="" scaleX="122" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="561" y="497" name="inst_2599FDB2" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="45"/>
     <instance objName="Solid" x="32" y="960" name="inst_FA65E13E" locked="0" code="" scaleX="122" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Player" x="85" y="432" name="inst_18AA2E41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Door" x="1344" y="448" name="inst_A5D88831" locked="0" code="rm = test0;&#xA;rx = 448;&#xA;ry = 420;&#xA;auto = false;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player" x="85" y="432" name="inst_18AA2E41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MediumGround" x="448" y="416" name="inst_6F8FC6CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SmallGround" x="864" y="416" name="inst_7888DD81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MediumGround" x="352" y="768" name="inst_AD00C048" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
