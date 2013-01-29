@@ -102,6 +102,8 @@
     <sprites name="Misc">
       <sprite>sprites\npcmask_sprite</sprite>
       <sprite>sprites\movingplat_sprite</sprite>
+      <sprite>sprites\gate_sprite</sprite>
+      <sprite>sprites\key_sprite</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -113,15 +115,25 @@
     <background>background\background6</background>
     <background>background\inside_bg</background>
     <background>background\ice_bg</background>
-    <background>background\mountain</background>
+    <background>background\mountain_1_bg</background>
     <background>background\icewalk_bg</background>
     <background>background\icewalk2_bg</background>
     <background>background\ice_cave</background>
+    <background>background\background17</background>
     <background>background\dirt_bg</background>
     <background>background\ice_ground_bg</background>
     <background>background\ice_ground_left_bg</background>
     <background>background\ice_ground_right_bg</background>
     <background>background\background16</background>
+    <background>background\ice_king_bg</background>
+    <background>background\rock_bg</background>
+    <background>background\coal_bg</background>
+    <background>background\coal_walk_way</background>
+    <background>background\background26</background>
+    <background>background\background24</background>
+    <background>background\background25</background>
+    <background>background\coal_cave</background>
+    <background>background\background23</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -476,6 +488,7 @@
       <object>objects\IceSpecial</object>
     </objects>
     <object>objects\Key</object>
+    <object>objects\Gate</object>
     <object>objects\Weapon</object>
     <object>objects\NPC</object>
     <object>objects\Dialog</object>
